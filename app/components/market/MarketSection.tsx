@@ -63,11 +63,11 @@ export default function MarketSection() {
           <Globe className="w-3 h-3" /> Global Expansion
         </Badge>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
-          Capturing the $7.5T Islamic Finance TAM
+          700M+ Addressable Users. Five Regions.
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-          Phased rollout from KSA to Indonesia, Africa, South Asia, and GCC
-          &mdash; each with native payment rails and strategic partnerships.
+          KSA first, then Indonesia, Africa, South Asia, and wider GCC &mdash;
+          native payment rails and strategic distribution in every market.
         </p>
       </div>
 

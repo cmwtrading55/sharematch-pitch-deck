@@ -56,8 +56,8 @@ export default function TeamSection() {
           The Team Behind ShareMatch
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-          Finance veterans, AI engineers, and Islamic finance scholars &mdash;
-          the only team in the world with the credentials to build this.
+          Finance veterans, AI engineers, and Islamic finance scholars
+          who have already shipped the product and secured the Fatwa.
         </p>
       </div>
 

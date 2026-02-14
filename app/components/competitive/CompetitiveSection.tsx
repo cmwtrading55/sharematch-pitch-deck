@@ -17,7 +17,7 @@ const moats = [
     icon: Shield,
     title: "Regulatory Moat",
     description:
-      "Formal Fatwa and multi-jurisdictional approvals across UK, UAE, Poland (VASP), and Canada (MSB). Competitors cannot replicate this.",
+      "Formal Fatwa plus regulated operations across UK, UAE, Poland (VASP), and Canada (MSB). Years of scholarly and regulatory work already banked.",
   },
   {
     icon: Building2,
@@ -47,7 +47,7 @@ const moats = [
     icon: Rocket,
     title: "First-Mover Advantage",
     description:
-      "Defines the category before competitors emerge. The only Shariah-compliant platform globally, with patent protection on core logic.",
+      "Category creator with patent protection on core logic. Head start compounds &mdash; every new user, market, and jurisdiction widens the gap.",
   },
 ];
 
@@ -62,8 +62,7 @@ export default function CompetitiveSection() {
           The Compound Moat
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-          Six reinforcing advantages that compound over time and cannot be
-          replicated.
+          Six reinforcing advantages that compound over time.
         </p>
       </div>
 

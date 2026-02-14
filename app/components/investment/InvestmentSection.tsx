@@ -62,8 +62,7 @@ export default function InvestmentSection() {
           Investment Terms
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-          Join the seed round of the world&rsquo;s only Shariah-compliant
-          digital markets platform. Round closes{" "}
+          £4M at £64M post-money. Round closes{" "}
           <span className="text-amber-400 font-semibold">6th March 2026</span>.
         </p>
       </div>

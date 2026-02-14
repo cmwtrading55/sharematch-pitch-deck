@@ -6,10 +6,10 @@ import SectionWrapper from "../common/SectionWrapper";
 import Badge from "../common/Badge";
 
 const stats = [
-  "Live Platform",
-  "Shariah Approved",
+  "Live & Trading",
+  "Fatwa Approved",
   "RWA Structure",
-  "Secondary Trading",
+  "Secondary Market",
 ];
 
 const avatars = ["epl", "f1", "nba", "nfl", "ucl", "spl", "wc", "t20"];
@@ -22,21 +22,21 @@ export default function ProductSection() {
           Live Product
         </Badge>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
-          The Platform &mdash; Live &amp; Trading
+          Already Live. Already Trading.
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-          ShareMatch is not a concept. It is live, Shariah-approved, and
-          processing trades across global sporting events.
+          Real users, real volume, real markets &mdash; across football,
+          cricket, motorsport, basketball, e-sports, and global events.
         </p>
       </div>
 
-      {/* Browser Frame */}
+      {/* Browser Frame with real screenshot */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="relative max-w-4xl mx-auto mb-12 animate-float"
+        className="relative max-w-4xl mx-auto mb-12"
       >
         <div className="browser-frame">
           <div className="browser-frame-bar">
@@ -49,22 +49,14 @@ export default function ProductSection() {
               </div>
             </div>
           </div>
-          <div className="relative aspect-[16/10] bg-gradient-to-br from-emerald-900/50 to-bg-secondary overflow-hidden">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-16 h-16 rounded-2xl bg-emerald-500/20 flex items-center justify-center mx-auto mb-4">
-                  <Image
-                    src="/logos/sharematch-mark.svg"
-                    alt=""
-                    width={32}
-                    height={32}
-                  />
-                </div>
-                <p className="text-text-muted text-sm">
-                  Live platform &mdash; rwa.sharematch.me
-                </p>
-              </div>
-            </div>
+          <div className="relative aspect-[16/10] overflow-hidden">
+            <Image
+              src="/screenshots/platform.png"
+              alt="ShareMatch trading platform — live markets with real-time pricing"
+              fill
+              className="object-cover object-top"
+              priority
+            />
           </div>
         </div>
 

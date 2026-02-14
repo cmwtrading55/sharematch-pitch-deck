@@ -32,14 +32,14 @@ const comparables = [
   },
   {
     name: "ShareMatch",
-    badge: "Only Shariah Compliant",
+    badge: "Shariah Compliant",
     badgeVariant: "amber" as const,
     valuation: 64,
     suffix: "M",
     prefix: "£",
     source: "Post-Money Seed Valuation",
     barColor: "bg-gradient-to-r from-amber-500 to-amber-400",
-    status: "187x Growth Potential",
+    status: "Uncapped Upside",
     bg: "bg-emerald-900 border border-emerald-500/20",
     featured: true,
   },
@@ -53,12 +53,12 @@ export default function OpportunitySection() {
           Market Context
         </Badge>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
-          The Market Has Already Priced the Category
+          $12B Valuations. Zero Shariah Coverage.
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-          Prediction markets have exploded to $12B+ valuations. ShareMatch is the
-          only platform positioned to capture the $7.5 trillion Islamic finance
-          segment &mdash; a market the giants cannot enter.
+          Prediction markets are the fastest-growing asset class in fintech.
+          ShareMatch owns the only segment the incumbents structurally cannot
+          enter.
         </p>
       </div>
 
@@ -138,7 +138,8 @@ export default function OpportunitySection() {
           className="text-5xl md:text-6xl font-bold text-emerald-400"
         />
         <p className="text-text-secondary mt-2">
-          Islamic Finance &mdash; the one segment the giants cannot touch
+          Islamic Finance &mdash; growing 10% annually, entirely unserved by
+          digital markets
         </p>
       </motion.div>
     </SectionWrapper>

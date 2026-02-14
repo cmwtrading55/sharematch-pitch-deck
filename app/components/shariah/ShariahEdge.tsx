@@ -11,19 +11,19 @@ const features = [
     icon: Shield,
     title: "Fatwa Backed & Haqq Mali",
     description:
-      "Formal independent Shariah Fatwa recognises our tokens as Haqq Mali — a legitimate financial asset that can be possessed, transferred, inherited, and traded.",
+      "Independent Shariah Fatwa recognises our tokens as Haqq Mali — a legitimate financial asset that can be possessed, transferred, inherited, and traded under Islamic law.",
   },
   {
     icon: ArrowLeftRight,
     title: "Secondary Trading Approved",
     description:
-      "Our secondary market is explicitly approved as Halal — not gambling. This is unique globally and cannot be replicated without the same scholarly endorsement.",
+      "Full secondary market explicitly approved by scholars. This endorsement is globally unique and structurally impossible for incumbents to replicate.",
   },
   {
     icon: Lock,
-    title: "Proprietary IP & Patents",
+    title: "Patent-Protected IP",
     description:
-      "Smart-contract logic, compliance workflows, settlement mechanisms, and Shariah auditability are patent-protected. Global trademark filings across EU, US, Canada, GCC, and UK.",
+      "Smart-contract logic, compliance workflows, and settlement mechanisms are patent-filed. Global trademark filings across EU, US, Canada, GCC, and UK.",
   },
 ];
 
@@ -39,14 +39,14 @@ export default function ShariahEdge() {
     <SectionWrapper id="shariah" className="bg-bg-secondary">
       <div className="text-center mb-16">
         <Badge variant="emerald" className="mb-4">
-          Competitive Moat
+          Structural Advantage
         </Badge>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
           Why Only We Can Own This Segment
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-          A combination of Shariah scholarship, regulatory approvals, and
-          patent-protected technology that no competitor can replicate.
+          Shariah scholarship, multi-jurisdiction regulatory approvals, and
+          patent protection &mdash; a moat that compounds with time.
         </p>
       </div>
 

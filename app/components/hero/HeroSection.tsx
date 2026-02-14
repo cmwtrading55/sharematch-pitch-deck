@@ -41,7 +41,7 @@ export default function HeroSection() {
           transition={{ delay: 0.4, duration: 0.8, ease: [0.22, 0.61, 0.36, 1] }}
           className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6 max-w-5xl mx-auto"
         >
-          The World&rsquo;s Only{" "}
+          The World&rsquo;s First{" "}
           <span className="bg-gradient-to-r from-emerald-400 to-emerald-300 bg-clip-text text-transparent">
             Shariah-Compliant
           </span>{" "}
@@ -55,9 +55,9 @@ export default function HeroSection() {
           transition={{ delay: 0.6, duration: 0.6 }}
           className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Fatwa-approved, patent-protected, and already live. Invest in the
-          platform positioned to capture the $7.5 trillion Islamic finance
-          segment that no competitor can touch.
+          Fatwa-approved. Patent-protected. Already live.
+          Backed by independent Shariah scholars, with regulated operations
+          across four jurisdictions.
         </motion.p>
 
         {/* Key stats row */}
@@ -70,7 +70,6 @@ export default function HeroSection() {
           {[
             { value: "£4M", label: "Raising" },
             { value: "£64M", label: "Post-Money" },
-            { value: "187x", label: "Growth Potential" },
             { value: "EIS", label: "UK Tax Relief" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">

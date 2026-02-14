@@ -37,10 +37,10 @@ export default function CTASection() {
           </h2>
 
           <p className="text-lg text-text-secondary max-w-xl mx-auto mb-8">
-            Be part of the only Shariah-compliant digital markets platform. The
-            seed round closes{" "}
-            <span className="text-amber-400 font-semibold">6th March 2026</span>
-            &mdash; invest before the KSA launch.
+            The round closes{" "}
+            <span className="text-amber-400 font-semibold">6th March 2026</span>.
+            KSA launch follows immediately. This is the last chance at seed
+            pricing.
           </p>
 
           {/* Countdown */}
