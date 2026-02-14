@@ -12,7 +12,7 @@ const NAV_ITEMS = [
   { id: "roadmap", label: "Roadmap" },
   { id: "investment", label: "Investment" },
   { id: "competitive", label: "Moat" },
-  { id: "team", label: "Team" },
+
 ];
 
 export default function StickyNav() {
