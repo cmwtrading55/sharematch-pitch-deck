@@ -1,0 +1,9 @@
+name = "sharematch-pitch-deck"
+compatibility_date = "2024-12-01"
+pages_build_output_dir = "out"
+
+[env.production]
+name = "sharematch-pitch-deck"
+
+[env.preview]
+name = "sharematch-pitch-deck-preview"
