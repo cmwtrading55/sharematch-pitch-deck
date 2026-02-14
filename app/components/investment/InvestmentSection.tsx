@@ -35,7 +35,7 @@ function formatMultiple(value: number): string {
 
 export default function InvestmentSection() {
   const [futureValuation, setFutureValuation] = useState(1000);
-  const [investmentAmount, setInvestmentAmount] = useState(100); // £K
+  const [investmentAmount, setInvestmentAmount] = useState(100); // £K (min £100K)
 
   const minLog = Math.log(100);
   const maxLog = Math.log(8770);
@@ -189,7 +189,7 @@ export default function InvestmentSection() {
             Your investment amount
           </p>
           <div className="flex flex-wrap justify-center gap-2">
-            {[10, 25, 50, 100, 250, 500].map((amount) => (
+            {[100, 250, 500, 1000].map((amount) => (
               <button
                 key={amount}
                 onClick={() => setInvestmentAmount(amount)}
