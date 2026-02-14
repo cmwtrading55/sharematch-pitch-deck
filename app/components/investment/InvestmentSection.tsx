@@ -4,18 +4,8 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SectionWrapper from "../common/SectionWrapper";
 import Badge from "../common/Badge";
-
-const tiers = [
-  {
-    id: 1,
-    label: "Seed Round",
-    raising: 4,
-    valuation: 64,
-    equityPercent: 6.25,
-    description: "£4M at £64M post-money",
-    highlight: false,
-  },
-];
+import CountdownTimer from "../common/CountdownTimer";
+import { Shield, Clock } from "lucide-react";
 
 const useOfFunds = [
   { label: "KSA & GCC User Acquisition", percent: 35, amount: 1.4 },
@@ -57,7 +47,7 @@ export default function InvestmentSection() {
 
   const sliderPosition = valueToSlider(futureValuation);
 
-  const equityPercent = (investmentAmount / 1000) / 64 * 100; // % of company
+  const equityPercent = (investmentAmount / 1000) / 64 * 100;
   const equityValue = (equityPercent / 100) * futureValuation;
   const returnMultiple = equityValue / (investmentAmount / 1000);
   const profit = equityValue - investmentAmount / 1000;
@@ -66,14 +56,15 @@ export default function InvestmentSection() {
     <SectionWrapper id="investment" className="bg-bg-secondary">
       <div className="text-center mb-16">
         <Badge variant="amber" className="mb-4">
-          Seed Round
+          <Clock className="w-3 h-3" /> Seed Round &mdash; Closing 6th March
         </Badge>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
           Investment Terms
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
           Join the seed round of the world&rsquo;s only Shariah-compliant
-          digital markets platform.
+          digital markets platform. Round closes{" "}
+          <span className="text-amber-400 font-semibold">6th March 2026</span>.
         </p>
       </div>
 
@@ -83,12 +74,18 @@ export default function InvestmentSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="max-w-2xl mx-auto mb-12"
+        className="max-w-2xl mx-auto mb-8"
       >
         <div className="relative text-center p-8 rounded-2xl bg-emerald-900 border-2 border-emerald-400/50 glow-emerald">
-          <Badge variant="amber" className="mb-4">
-            Now Open
-          </Badge>
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Badge variant="amber">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-400" />
+              </span>
+              Now Open
+            </Badge>
+          </div>
           <p className="text-5xl font-bold mb-2">£4M</p>
           <p className="text-text-secondary mb-6">
             Seed Round at £64M Post-Money Valuation
@@ -109,6 +106,41 @@ export default function InvestmentSection() {
             </div>
           </div>
         </div>
+      </motion.div>
+
+      {/* EIS Badge */}
+      <motion.div
+        initial={{ opacity: 0, y: 15 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="max-w-2xl mx-auto mb-12"
+      >
+        <div className="flex items-center justify-center gap-3 p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/15">
+          <Shield className="w-5 h-5 text-emerald-400 flex-shrink-0" />
+          <div className="text-sm">
+            <span className="text-emerald-400 font-semibold">EIS Eligible</span>{" "}
+            <span className="text-text-secondary">
+              &mdash; UK investors may claim up to{" "}
+              <span className="text-text-primary font-medium">30% income tax relief</span>{" "}
+              via the Enterprise Investment Scheme. Capital gains tax exemption on qualifying shares held 3+ years.
+            </span>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* Countdown */}
+      <motion.div
+        initial={{ opacity: 0, y: 15 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="max-w-2xl mx-auto mb-12 text-center"
+      >
+        <p className="text-xs text-text-muted uppercase tracking-wider mb-3">
+          Round closes in
+        </p>
+        <CountdownTimer targetDate="2026-03-06T23:59:59Z" />
       </motion.div>
 
       {/* Use of Funds */}
@@ -257,13 +289,29 @@ export default function InvestmentSection() {
           </AnimatePresence>
         </motion.div>
 
+        {/* EIS callout inside calculator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+          className="mt-6 p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/10 text-center"
+        >
+          <p className="text-xs text-text-secondary">
+            <span className="text-emerald-400 font-semibold">With EIS relief:</span>{" "}
+            UK investors effectively invest at a{" "}
+            <span className="text-text-primary font-medium">30% discount</span>.
+            A £100K investment costs just £70K after tax relief.
+          </p>
+        </motion.div>
+
         {/* Comparables callout */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.6 }}
-          className="mt-8 p-5 rounded-xl bg-amber-500/5 border border-amber-500/15 text-center"
+          className="mt-4 p-5 rounded-xl bg-amber-500/5 border border-amber-500/15 text-center"
         >
           <p className="text-sm text-text-secondary">
             Kalshi and Polymarket are both valued at{" "}

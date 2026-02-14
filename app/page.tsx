@@ -8,6 +8,7 @@ import MarketSection from "./components/market/MarketSection";
 import CapitalSection from "./components/capital/CapitalSection";
 import RoadmapSection from "./components/roadmap/RoadmapSection";
 import CompetitiveSection from "./components/competitive/CompetitiveSection";
+import TeamSection from "./components/team/TeamSection";
 import CTASection from "./components/cta/CTASection";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <InvestmentSection />
       <CapitalSection />
       <CompetitiveSection />
+      <TeamSection />
       <CTASection />
     </main>
   );

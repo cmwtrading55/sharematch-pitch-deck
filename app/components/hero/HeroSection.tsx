@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Badge from "../common/Badge";
+import CountdownTimer from "../common/CountdownTimer";
 
 export default function HeroSection() {
   return (
@@ -17,39 +17,28 @@ export default function HeroSection() {
         }}
       />
 
-      <div className="section-container relative z-10 text-center">
-        {/* Logo */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: [0.22, 0.61, 0.36, 1] }}
-          className="flex items-center justify-center mb-12"
-        >
-          <Image
-            src="/logos/sharematch-lockup.svg"
-            alt="ShareMatch"
-            width={280}
-            height={68}
-            className="h-14 md:h-20 w-auto"
-            priority
-          />
-        </motion.div>
-
-        {/* Badge */}
+      <div className="section-container relative z-10 text-center pt-24">
+        {/* Closing date urgency badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.6 }}
-          className="mb-8"
+          transition={{ delay: 0.2, duration: 0.6 }}
+          className="mb-6"
         >
-          <Badge variant="amber">Seed Round &mdash; Now Open</Badge>
+          <Badge variant="amber">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-400" />
+            </span>
+            Seed Round Closing 6th March 2026
+          </Badge>
         </motion.div>
 
         {/* Headline */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.8, ease: [0.22, 0.61, 0.36, 1] }}
+          transition={{ delay: 0.4, duration: 0.8, ease: [0.22, 0.61, 0.36, 1] }}
           className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6 max-w-5xl mx-auto"
         >
           The World&rsquo;s Only{" "}
@@ -63,8 +52,8 @@ export default function HeroSection() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7, duration: 0.6 }}
-          className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-12 leading-relaxed"
+          transition={{ delay: 0.6, duration: 0.6 }}
+          className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-10 leading-relaxed"
         >
           Fatwa-approved, patent-protected, and already live. Invest in the
           platform positioned to capture the $7.5 trillion Islamic finance
@@ -75,13 +64,14 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.85, duration: 0.6 }}
-          className="flex flex-wrap justify-center gap-8 md:gap-12 mb-12"
+          transition={{ delay: 0.75, duration: 0.6 }}
+          className="flex flex-wrap justify-center gap-6 md:gap-10 mb-10"
         >
           {[
             { value: "£4M", label: "Raising" },
             { value: "£64M", label: "Post-Money" },
             { value: "187x", label: "Growth Potential" },
+            { value: "EIS", label: "UK Tax Relief" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <p className="text-2xl md:text-3xl font-bold text-amber-400">
@@ -92,11 +82,21 @@ export default function HeroSection() {
           ))}
         </motion.div>
 
+        {/* Countdown */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.85, duration: 0.6 }}
+          className="mb-10"
+        >
+          <CountdownTimer targetDate="2026-03-06T23:59:59Z" />
+        </motion.div>
+
         {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 0.6 }}
+          transition={{ delay: 0.95, duration: 0.6 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a

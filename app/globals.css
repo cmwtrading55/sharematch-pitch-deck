@@ -34,6 +34,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+::selection {
+  background: rgba(16, 185, 129, 0.3);
+  color: #F8FFFE;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
 /* Utility classes */
 .section-container {
   width: 100%;
