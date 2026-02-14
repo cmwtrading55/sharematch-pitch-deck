@@ -107,10 +107,10 @@ export default function HeroSection() {
             </svg>
           </a>
           <a
-            href="#product"
+            href="#opportunity"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/10 text-text-secondary font-medium hover:border-emerald-500/30 hover:text-text-primary transition-all duration-300"
           >
-            See the Platform
+            See the Opportunity
           </a>
         </motion.div>
       </div>
