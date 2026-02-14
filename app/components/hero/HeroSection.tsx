@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Badge from "../common/Badge";
-import CountdownTimer from "../common/CountdownTimer";
 
 export default function HeroSection() {
   return (
@@ -18,7 +17,7 @@ export default function HeroSection() {
       />
 
       <div className="section-container relative z-10 text-center pt-24">
-        {/* Closing date urgency badge */}
+        {/* Closing date badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -65,7 +64,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.75, duration: 0.6 }}
-          className="flex flex-wrap justify-center gap-6 md:gap-10 mb-10"
+          className="flex flex-wrap justify-center gap-6 md:gap-10 mb-12"
         >
           {[
             { value: "£4M", label: "Raising" },
@@ -81,21 +80,11 @@ export default function HeroSection() {
           ))}
         </motion.div>
 
-        {/* Countdown */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.85, duration: 0.6 }}
-          className="mb-10"
-        >
-          <CountdownTimer targetDate="2026-03-06T23:59:59Z" />
-        </motion.div>
-
         {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.95, duration: 0.6 }}
+          transition={{ delay: 0.85, duration: 0.6 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a

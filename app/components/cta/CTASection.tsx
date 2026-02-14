@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import CountdownTimer from "../common/CountdownTimer";
 import Badge from "../common/Badge";
 import { Shield } from "lucide-react";
 
@@ -29,7 +28,7 @@ export default function CTASection() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-400" />
             </span>
-            Closing 6th March 2026
+            Seed Round Closing 6th March 2026
           </Badge>
 
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
@@ -37,16 +36,9 @@ export default function CTASection() {
           </h2>
 
           <p className="text-lg text-text-secondary max-w-xl mx-auto mb-8">
-            The round closes{" "}
-            <span className="text-amber-400 font-semibold">6th March 2026</span>.
             KSA launch follows immediately. This is the last chance at seed
             pricing.
           </p>
-
-          {/* Countdown */}
-          <div className="mb-8">
-            <CountdownTimer targetDate="2026-03-06T23:59:59Z" />
-          </div>
 
           {/* EIS callout */}
           <motion.div

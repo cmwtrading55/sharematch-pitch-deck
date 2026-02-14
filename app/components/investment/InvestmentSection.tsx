@@ -4,7 +4,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SectionWrapper from "../common/SectionWrapper";
 import Badge from "../common/Badge";
-import CountdownTimer from "../common/CountdownTimer";
 import { Shield, Clock } from "lucide-react";
 
 const useOfFunds = [
@@ -128,20 +127,6 @@ export default function InvestmentSection() {
         </div>
       </motion.div>
 
-      {/* Countdown */}
-      <motion.div
-        initial={{ opacity: 0, y: 15 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="max-w-2xl mx-auto mb-12 text-center"
-      >
-        <p className="text-xs text-text-muted uppercase tracking-wider mb-3">
-          Round closes in
-        </p>
-        <CountdownTimer targetDate="2026-03-06T23:59:59Z" />
-      </motion.div>
-
       {/* Use of Funds */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -195,7 +180,7 @@ export default function InvestmentSection() {
           Return Scenario Calculator
         </h3>
         <p className="text-text-secondary text-sm text-center mb-8">
-          See what your investment could be worth at different future valuations
+          Model your return at different future valuations
         </p>
 
         {/* Investment Amount Selector */}
