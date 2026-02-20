@@ -132,7 +132,7 @@ export default function ShariahEdge() {
                   <Shield className="w-5 h-5 text-emerald-400" />
                 </div>
                 <div>
-                  <p className="text-sm font-medium">HAL‑AI Compliance Engine</p>
+                  <p className="text-sm font-medium">HAL‑AI Engine</p>
                   <p className="text-xs text-text-muted">Real-time analytics & scholar-assist</p>
                 </div>
               </div>
