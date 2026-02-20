@@ -61,8 +61,8 @@ export default function RoadmapSection() {
   const lineHeight = useTransform(scrollYProgress, [0.1, 0.9], ["0%", "100%"]);
 
   return (
-    <SectionWrapper id="roadmap" className="bg-bg-secondary">
-      <div className="text-center mb-16">
+    <SectionWrapper id="roadmap" className="bg-bg-secondary py-5 md:py-10">
+      <div className="text-center mb-5">
         <Badge variant="amber" className="mb-4">
           Roadmap
         </Badge>
@@ -89,7 +89,7 @@ export default function RoadmapSection() {
           {milestones.map((m, i) => {
             const isLeft = i % 2 === 0;
             return (
-              <motion.div
+          <motion.div
                 key={m.date}
                 initial={{ opacity: 0, x: isLeft ? -30 : 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -128,7 +128,7 @@ export default function RoadmapSection() {
                 </div>
 
                 {/* Timeline dot */}
-                <div className="absolute left-6 md:left-1/2 -translate-x-1/2 flex-shrink-0">
+                <div className="absolute left-6 md:left-1/2 -translate-x-1/2 shrink-0">
                   <div
                     className={`w-4 h-4 rounded-full border-2 ${
                       m.completed

@@ -6,13 +6,12 @@ import Image from "next/image";
 
 const NAV_ITEMS = [
   { id: "opportunity", label: "Opportunity" },
+  { id: "product", label: "Product" },
   { id: "shariah", label: "Shariah Edge" },
-
   { id: "markets", label: "Markets" },
   { id: "roadmap", label: "Roadmap" },
   { id: "investment", label: "Investment" },
   { id: "competitive", label: "Moat" },
-
 ];
 
 export default function StickyNav() {
@@ -52,7 +51,7 @@ export default function StickyNav() {
       {/* Scroll progress bar */}
       <motion.div
         style={{ scaleX }}
-        className="fixed top-0 left-0 right-0 h-[2px] bg-amber-500 origin-left z-[60]"
+        className="fixed top-0 left-0 right-0 h-[2px] bg-amber-500 origin-left z-60"
       />
 
       <nav
@@ -74,19 +73,22 @@ export default function StickyNav() {
           />
 
           <div className="hidden md:flex items-center gap-1">
-            {NAV_ITEMS.map((item) => (
-              <a
-                key={item.id}
-                href={`#${item.id}`}
-                className={`px-3 py-1.5 text-sm rounded-full transition-all duration-300 ${
-                  active === item.id
-                    ? "text-emerald-400 bg-emerald-500/10"
-                    : "text-text-muted hover:text-text-primary"
-                }`}
-              >
-                {item.label}
-              </a>
-            ))}
+            {NAV_ITEMS.map((item) => {
+              const href = (item as any).href ? (item as any).href : `#${item.id}`;
+              return (
+                <a
+                  key={item.id}
+                  href={href}
+                  className={`px-3 py-1.5 text-sm rounded-full transition-all duration-300 ${
+                    active === item.id
+                      ? "text-emerald-400 bg-emerald-500/10"
+                      : "text-text-muted hover:text-text-primary"
+                  }`}
+                >
+                  {item.label}
+                </a>
+              );
+            })}
           </div>
 
           <a

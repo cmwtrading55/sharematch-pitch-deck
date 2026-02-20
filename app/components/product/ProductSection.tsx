@@ -16,8 +16,8 @@ const avatars = ["epl", "f1", "nba", "nfl", "ucl", "spl", "wc", "t20"];
 
 export default function ProductSection() {
   return (
-    <SectionWrapper id="product">
-      <div className="text-center mb-16">
+    <SectionWrapper id="product" className="py-5 md:py-10">
+      <div className="text-center mb-5">
         <Badge variant="emerald" className="mb-4">
           Live Product
         </Badge>
@@ -36,27 +36,52 @@ export default function ProductSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="relative max-w-4xl mx-auto mb-12"
+        className="relative max-w-6xl mx-auto mb-12"
       >
-        <div className="browser-frame">
-          <div className="browser-frame-bar">
-            <div className="browser-dot bg-red-500" />
-            <div className="browser-dot bg-yellow-500" />
-            <div className="browser-dot bg-green-500" />
-            <div className="flex-1 mx-4">
-              <div className="bg-white/5 rounded-md px-3 py-1 text-xs text-text-muted text-center">
-                rwa.sharematch.me
+        <div className="flex flex-col md:flex-row gap-6 items-stretch">
+          {/* First screen */}
+          <div className="browser-frame flex-1 min-w-[360px]">
+            <div className="browser-frame-bar">
+              <div className="browser-dot bg-red-500" />
+              <div className="browser-dot bg-yellow-500" />
+              <div className="browser-dot bg-green-500" />
+              <div className="flex-1 mx-4">
+                <div className="bg-white/5 rounded-md px-3 py-1 text-xs text-text-muted text-center">
+                  rwa.sharematch.me
+                </div>
               </div>
             </div>
+            <div className="relative aspect-16/10 overflow-hidden">
+              <Image
+                src="/screenshots/platform.png"
+                alt="ShareMatch trading platform — live markets with real-time pricing"
+                fill
+                className="object-contain object-top p-2"
+                priority
+              />
+            </div>
           </div>
-          <div className="relative aspect-[16/10] overflow-hidden">
-            <Image
-              src="/screenshots/platform.png"
-              alt="ShareMatch trading platform — live markets with real-time pricing"
-              fill
-              className="object-cover object-top"
-              priority
-            />
+
+          {/* Second screen */}
+          <div className="browser-frame flex-1 min-w-[360px]">
+            <div className="browser-frame-bar">
+              <div className="browser-dot bg-red-500" />
+              <div className="browser-dot bg-yellow-500" />
+              <div className="browser-dot bg-green-500" />
+              <div className="flex-1 mx-4">
+                <div className="bg-white/5 rounded-md px-3 py-1 text-xs text-text-muted text-center">
+                  rwa.sharematch.me/ai-analytics
+                </div>
+              </div>
+            </div>
+            <div className="relative aspect-16/10 overflow-hidden">
+              <Image
+                src="/screenshots/HAL-AI.png"
+                alt="HAL AI — analytics view"
+                fill
+                className="object-cover object-center"
+              />
+            </div>
           </div>
         </div>
 

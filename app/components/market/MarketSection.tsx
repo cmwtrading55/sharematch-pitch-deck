@@ -57,8 +57,8 @@ const markets = [
 
 export default function MarketSection() {
   return (
-    <SectionWrapper id="markets" className="bg-bg-secondary">
-      <div className="text-center mb-16">
+    <SectionWrapper id="markets" className="bg-bg-secondary py-5 md:py-10">
+      <div className="text-center mb-5">
         <Badge variant="emerald" className="mb-4">
           <Globe className="w-3 h-3" /> Global Expansion
         </Badge>

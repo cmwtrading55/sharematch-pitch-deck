@@ -53,8 +53,8 @@ const moats = [
 
 export default function CompetitiveSection() {
   return (
-    <SectionWrapper id="competitive">
-      <div className="text-center mb-16">
+    <SectionWrapper id="competitive" className="py-5 md:py-10">
+      <div className="text-center mb-5">
         <Badge variant="emerald" className="mb-4">
           Defensibility
         </Badge>

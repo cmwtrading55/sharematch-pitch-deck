@@ -4,6 +4,7 @@ import InvestmentSection from "./components/investment/InvestmentSection";
 import OpportunitySection from "./components/opportunity/OpportunitySection";
 import ShariahEdge from "./components/shariah/ShariahEdge";
 
+import ProductSection from "./components/product/ProductSection";
 import MarketSection from "./components/market/MarketSection";
 import CapitalSection from "./components/capital/CapitalSection";
 import RoadmapSection from "./components/roadmap/RoadmapSection";
@@ -17,6 +18,7 @@ export default function Home() {
       <StickyNav />
       <HeroSection />
       <OpportunitySection />
+      <ProductSection />
       <ShariahEdge />
 
       <MarketSection />

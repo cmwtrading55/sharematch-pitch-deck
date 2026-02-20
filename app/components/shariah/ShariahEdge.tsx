@@ -56,7 +56,7 @@ export default function ShariahEdge() {
           {features.map((f, i) => (
             <GlowCard key={f.title} delay={i * 0.15} className="p-6">
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center">
+                <div className="shrink-0 w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center">
                   <f.icon className="w-6 h-6 text-emerald-400" />
                 </div>
                 <div>
@@ -92,26 +92,49 @@ export default function ShariahEdge() {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="lg:col-span-2"
         >
-          <div className="relative p-8 rounded-2xl bg-bg-elevated border border-emerald-500/10">
-            {/* Top accent border */}
-            <div className="absolute top-0 left-6 right-6 h-[2px] bg-gradient-to-r from-emerald-500 to-amber-500 rounded-full" />
+          <div className="space-y-4">
+            <div className="relative pt-4 px-8 pb-8 rounded-2xl bg-bg-elevated border border-emerald-500/10">
+              {/* Top accent border */}
+              <div className="absolute top-0 left-6 right-6 h-[2px] bg-gradient-to-r from-emerald-500 to-amber-500 rounded-full" />
 
-            <div className="text-6xl text-emerald-500/30 font-serif leading-none mb-4">
-              &ldquo;
-            </div>
-            <blockquote className="text-text-secondary text-sm leading-relaxed mb-6 italic">
-              These tokens constitute a recognised financial asset&hellip; Each
-              token represents a fully defined contractual entitlement (haqq
-              mali) that may be possessed, transferred, inherited and traded in
-              accordance with Shariah principles.
-            </blockquote>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center">
-                <Shield className="w-5 h-5 text-emerald-400" />
+            <div className="text-4xl text-emerald-500/30 font-serif leading-none mb-0">
+                &ldquo;
               </div>
-              <div>
-                <p className="text-sm font-medium">Independent Shariah Board</p>
-                <p className="text-xs text-text-muted">Formal Fatwa Ruling</p>
+            <blockquote className="text-text-secondary text-sm leading-tight mt-0 mb-0 italic">
+                These tokens constitute a recognised financial asset&hellip; Each
+                token represents a fully defined contractual entitlement (haqq
+                mali) that may be possessed, transferred, inherited and traded in
+                accordance with Shariah principles.
+              </blockquote>
+            <div className="flex items-center gap-3 mt-3">
+                <div className="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center">
+                  <Shield className="w-5 h-5 text-emerald-400" />
+                </div>
+                <div>
+                  <p className="text-sm font-medium">Independent Shariah Board</p>
+                  <p className="text-xs text-text-muted">Formal Fatwa Ruling</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative pt-4 px-8 pb-8 rounded-2xl bg-bg-elevated border border-emerald-500/10">
+              {/* Top accent border */}
+              <div className="absolute top-0 left-6 right-6 h-[2px] bg-gradient-to-r from-emerald-500 to-amber-500 rounded-full" />
+
+              <div className="text-4xl text-emerald-500/30 font-serif leading-none mb-0">
+                &ldquo;
+              </div>
+              <blockquote className="text-text-secondary text-sm leading-tight mt-0 mb-0 italic">
+                The HAL‑AI Engine is a proprietary, Shariah-compliant utility accessible through IAT holding, enabling users to perform in-app research, analyse event data, and derive contextual insights in accordance with Shariah governance principles.
+              </blockquote>
+              <div className="flex items-center gap-3 mt-3">
+                <div className="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center">
+                  <Shield className="w-5 h-5 text-emerald-400" />
+                </div>
+                <div>
+                  <p className="text-sm font-medium">HAL‑AI Compliance Engine</p>
+                  <p className="text-xs text-text-muted">Real-time analytics & scholar-assist</p>
+                </div>
               </div>
             </div>
           </div>

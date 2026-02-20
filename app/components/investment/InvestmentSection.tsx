@@ -52,8 +52,8 @@ export default function InvestmentSection() {
   const profit = equityValue - investmentAmount / 1000;
 
   return (
-    <SectionWrapper id="investment" className="bg-bg-secondary">
-      <div className="text-center mb-16">
+    <SectionWrapper id="investment" className="bg-bg-secondary py-5 md:py-10">
+      <div className="text-center mb-5">
         <Badge variant="amber" className="mb-4">
           <Clock className="w-3 h-3" /> Seed Round &mdash; Closing 6th March
         </Badge>
@@ -74,7 +74,7 @@ export default function InvestmentSection() {
         transition={{ duration: 0.6 }}
         className="max-w-2xl mx-auto mb-8"
       >
-        <div className="relative text-center p-8 rounded-2xl bg-emerald-900 border-2 border-emerald-400/50 glow-emerald">
+          <div className="relative text-center p-8 rounded-2xl bg-emerald-900 border-2 border-emerald-400/50 glow-emerald">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Badge variant="amber">
               <span className="relative flex h-2 w-2">
