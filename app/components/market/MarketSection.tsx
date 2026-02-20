@@ -33,7 +33,7 @@ const markets = [
     region: "Africa",
     phase: "Phase 2",
     tam: "30-40M",
-    tamNum: 35,
+    tamNum: 400,
     segments: ["Nigeria Sports Fans", "East Africa Mobile-first"],
     rails: ["MPESA", "Safaricom"],
   },

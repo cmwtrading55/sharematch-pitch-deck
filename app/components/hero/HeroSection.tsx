@@ -54,9 +54,8 @@ export default function HeroSection() {
           transition={{ delay: 0.6, duration: 0.6 }}
           className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Fatwa-approved. Patent-protected. Already live.
-          Backed by independent Shariah scholars, with regulated operations
-          across four jurisdictions.
+          Fatwa issued. Shariah compliant. Patent-protected. Market ready.
+          Supported by leading Shariah scholars and EU regulated for Global Markets.
         </motion.p>
 
         {/* Key stats row */}

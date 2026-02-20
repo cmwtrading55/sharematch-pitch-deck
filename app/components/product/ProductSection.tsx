@@ -22,7 +22,7 @@ export default function ProductSection() {
           Live Product
         </Badge>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
-          Already Live. Already Trading.
+          Market ready with live data.
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
           Real users, real volume, real markets &mdash; across football,

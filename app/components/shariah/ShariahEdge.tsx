@@ -28,10 +28,9 @@ const features = [
 ];
 
 const jurisdictions = [
-  { label: "UK", detail: "Regulated" },
-  { label: "UAE", detail: "Compliant" },
-  { label: "Poland", detail: "VASP" },
-  { label: "Canada", detail: "MSB" },
+  { label: "UK" },
+  { label: "UAE"},
+  { label: "Poland"},
 ];
 
 export default function ShariahEdge() {
@@ -78,7 +77,6 @@ export default function ShariahEdge() {
               >
                 <div className="w-2 h-2 rounded-full bg-emerald-400" />
                 <span className="text-sm font-medium">{j.label}</span>
-                <span className="text-xs text-text-muted">{j.detail}</span>
               </div>
             ))}
           </div>

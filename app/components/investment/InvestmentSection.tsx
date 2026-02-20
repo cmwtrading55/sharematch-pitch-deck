@@ -6,12 +6,7 @@ import SectionWrapper from "../common/SectionWrapper";
 import Badge from "../common/Badge";
 import { Shield, Clock } from "lucide-react";
 
-const useOfFunds = [
-  { label: "KSA & GCC User Acquisition", percent: 35, amount: 1.4 },
-  { label: "Liquidity & Market Making", percent: 25, amount: 1.0 },
-  { label: "Engineering & Product", percent: 25, amount: 1.0 },
-  { label: "Shariah & Regulatory Operations", percent: 15, amount: 0.6 },
-];
+ 
 
 const valuationMarks = [
   { value: 100, label: "£100M" },
@@ -114,8 +109,8 @@ export default function InvestmentSection() {
         transition={{ duration: 0.5 }}
         className="max-w-2xl mx-auto mb-12"
       >
-        <div className="flex items-center justify-center gap-3 p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/15">
-          <Shield className="w-5 h-5 text-emerald-400 flex-shrink-0" />
+          <div className="flex items-center justify-center gap-3 p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/15">
+          <Shield className="w-5 h-5 text-emerald-400 shrink-0" />
           <div className="text-sm">
             <span className="text-emerald-400 font-semibold">EIS Eligible</span>{" "}
             <span className="text-text-secondary">
@@ -127,46 +122,7 @@ export default function InvestmentSection() {
         </div>
       </motion.div>
 
-      {/* Use of Funds */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-        className="max-w-2xl mx-auto mb-16"
-      >
-        <h3 className="text-xl font-semibold mb-6 text-center">
-          Use of Funds
-        </h3>
-        <div className="space-y-4">
-          {useOfFunds.map((item, i) => (
-            <motion.div
-              key={item.label}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="glass-card p-4"
-            >
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-sm font-medium">{item.label}</span>
-                <span className="text-sm text-emerald-400 font-semibold">
-                  £{item.amount}M ({item.percent}%)
-                </span>
-              </div>
-              <div className="h-2 rounded-full bg-white/5 overflow-hidden">
-                <motion.div
-                  initial={{ width: 0 }}
-                  whileInView={{ width: `${item.percent}%` }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.3 + i * 0.1, duration: 0.8, ease: "easeOut" }}
-                  className="h-full rounded-full bg-gradient-to-r from-emerald-500 to-emerald-400"
-                />
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
+      {/* Use of Funds removed */}
 
       {/* ROI Calculator */}
       <motion.div
