@@ -63,7 +63,7 @@ export default function OpportunitySection() {
       </div>
 
       {/* Comparable Cards */}
-      <div className="grid md:grid-cols-3 gap-6 mb-16">
+      <div className="grid md:grid-cols-3 gap-6 mb-16 items-stretch">
         {comparables.map((comp, i) => (
           <motion.div
             key={comp.name}
@@ -75,10 +75,8 @@ export default function OpportunitySection() {
               duration: 0.6,
               ease: [0.22, 0.61, 0.36, 1],
             }}
-            className={`relative p-6 rounded-2xl transition-all duration-500 ${
-              comp.featured
-                ? `${comp.bg} shimmer md:-translate-y-4 glow-emerald`
-                : comp.bg
+            className={`relative p-6 rounded-2xl transition-all duration-500 h-full flex flex-col ${
+              comp.featured ? `${comp.bg} shimmer glow-emerald` : comp.bg
             }`}
           >
             <div className="flex items-center justify-between mb-4">
@@ -99,7 +97,7 @@ export default function OpportunitySection() {
             <p className="text-sm text-text-muted mb-6">{comp.source}</p>
 
             {/* Progress bar */}
-            <div className="relative h-8 rounded-full bg-white/5 overflow-hidden">
+            <div className="mt-auto relative h-8 rounded-full bg-white/5 overflow-hidden">
               <motion.div
                 initial={{ width: 0 }}
                 whileInView={{ width: "100%" }}
