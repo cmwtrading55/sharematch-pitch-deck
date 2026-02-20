@@ -1,4 +1,4 @@
-"use client";
+ "use client";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -7,7 +7,7 @@ import { Shield } from "lucide-react";
 
 export default function CTASection() {
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center gradient-mesh overflow-hidden">
+    <section className="relative min-h-[80vh] flex items-center justify-center gradient-mesh overflow-hidden pb-32 sm:pb-20">
       <div className="section-container relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -55,7 +55,7 @@ export default function CTASection() {
             </span>
           </motion.div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-24 sm:mb-16">
             <a
               href="mailto:will@sharematch.me?subject=ShareMatch%20Seed%20Round%20Enquiry"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-emerald-900 text-white font-medium text-lg hover:bg-emerald-700 transition-all duration-300 hover:-translate-y-0.5 shimmer"

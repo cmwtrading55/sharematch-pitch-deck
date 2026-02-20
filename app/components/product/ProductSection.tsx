@@ -38,43 +38,43 @@ export default function ProductSection() {
         transition={{ duration: 0.8 }}
         className="relative max-w-6xl mx-auto mb-12"
       >
-        <div className="flex flex-col md:flex-row gap-6 items-stretch">
+        <div className="flex flex-col md:flex-row gap-6 items-center">
           {/* First screen */}
-          <div className="browser-frame flex-1 min-w-[360px]">
+          <div className="browser-frame flex-1 w-full min-w-0 md:min-w-[360px]">
             <div className="browser-frame-bar">
               <div className="browser-dot bg-red-500" />
               <div className="browser-dot bg-yellow-500" />
               <div className="browser-dot bg-green-500" />
               <div className="flex-1 mx-4">
-                <div className="bg-white/5 rounded-md px-3 py-1 text-xs text-text-muted text-center">
+                <div className="bg-white/5 rounded-md px-3 py-1 text-[11px] md:text-xs text-text-muted text-center">
                   rwa.sharematch.me
                 </div>
               </div>
             </div>
-            <div className="relative aspect-16/10 overflow-hidden">
+            <div className="relative aspect-16/10 overflow-hidden mx-auto w-full max-w-full">
               <Image
-                src="/screenshots/platform.png"
-                alt="ShareMatch trading platform — live markets with real-time pricing"
+                src="/screenshots/LoggedView.png"
+                alt="ShareMatch logged-in view — full platform"
                 fill
-                className="object-contain object-top p-2"
+                className="object-contain object-center p-2"
                 priority
               />
             </div>
           </div>
 
           {/* Second screen */}
-          <div className="browser-frame flex-1 min-w-[360px]">
+          <div className="browser-frame flex-1 w-full min-w-0 md:min-w-[360px]">
             <div className="browser-frame-bar">
               <div className="browser-dot bg-red-500" />
               <div className="browser-dot bg-yellow-500" />
               <div className="browser-dot bg-green-500" />
               <div className="flex-1 mx-4">
-                <div className="bg-white/5 rounded-md px-3 py-1 text-xs text-text-muted text-center">
+                <div className="bg-white/5 rounded-md px-3 py-1 text-[11px] md:text-xs text-text-muted text-center">
                   rwa.sharematch.me/ai-analytics
                 </div>
               </div>
             </div>
-            <div className="relative aspect-16/10 overflow-hidden">
+            <div className="relative aspect-16/10 overflow-hidden mx-auto w-full max-w-full">
               <Image
                 src="/screenshots/HAL-AI.png"
                 alt="HAL AI — analytics view"
