@@ -16,8 +16,8 @@ const avatars = ["epl", "f1", "nba", "nfl", "ucl", "spl", "wc", "t20"];
 
 export default function ProductSection() {
   return (
-    <SectionWrapper id="product" className="py-5 md:py-10">
-      <div className="text-center mb-5">
+    <SectionWrapper id="product" className="py-5 md:py-10 xl:pt-4">
+      <div className="text-center mb-5 xl:mb-4">
         <Badge variant="emerald" className="mb-4">
           Live Product
         </Badge>
@@ -104,26 +104,7 @@ export default function ProductSection() {
         ))}
       </div>
 
-      {/* Index avatar strip */}
-      <div className="flex justify-center gap-4">
-        {avatars.map((a, i) => (
-          <motion.div
-            key={a}
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.5 + i * 0.05, duration: 0.4 }}
-            className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center overflow-hidden"
-          >
-            <Image
-              src={`/index-avatars/${a}.svg`}
-              alt={a.toUpperCase()}
-              width={24}
-              height={24}
-            />
-          </motion.div>
-        ))}
-      </div>
+      {/* Index avatars removed per request */}
     </SectionWrapper>
   );
 }

@@ -52,8 +52,8 @@ export default function InvestmentSection() {
   const profit = equityValue - investmentAmount / 1000;
 
   return (
-    <SectionWrapper id="investment" className="bg-bg-secondary py-5 md:py-10">
-      <div className="text-center mb-5">
+    <SectionWrapper id="investment" className="bg-bg-secondary py-5 md:py-10 xl:pt-4">
+      <div className="text-center mb-5 xl:mb-4">
         <Badge variant="amber" className="mb-4">
           <Clock className="w-3 h-3" /> Seed Round &mdash; Closing 6th March
         </Badge>

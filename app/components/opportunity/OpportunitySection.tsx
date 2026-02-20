@@ -125,7 +125,7 @@ export default function OpportunitySection() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="text-center p-8 rounded-2xl bg-gradient-to-br from-emerald-900/50 to-bg-secondary border border-emerald-500/10"
+        className="text-center pt-8 pb-8 px-8 xl:pt-4 rounded-2xl bg-gradient-to-br from-emerald-900/50 to-bg-secondary border border-emerald-500/10"
       >
         <p className="text-text-secondary mb-2 text-sm uppercase tracking-wider">
           Total Addressable Market

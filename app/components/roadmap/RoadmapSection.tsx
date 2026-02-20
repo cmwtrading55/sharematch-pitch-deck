@@ -61,8 +61,8 @@ export default function RoadmapSection() {
   const lineHeight = useTransform(scrollYProgress, [0.1, 0.9], ["0%", "100%"]);
 
   return (
-    <SectionWrapper id="roadmap" className="bg-bg-secondary py-5 md:py-10">
-      <div className="text-center mb-5">
+    <SectionWrapper id="roadmap" className="bg-bg-secondary py-5 md:py-10 xl:pt-4">
+      <div className="text-center mb-5 xl:mb-4">
         <Badge variant="amber" className="mb-4">
           Roadmap
         </Badge>
