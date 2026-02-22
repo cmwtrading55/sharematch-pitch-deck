@@ -6,13 +6,13 @@ import SectionWrapper from "../common/SectionWrapper";
 import Badge from "../common/Badge";
 
 const stats = [
-  "Live & Trading",
   "Fatwa Approved",
+  "Live & Trading",
   "RWA Structure",
-  "Secondary Market",
+  "Digital Payments",
+  "HAL AI",
+  "On-Chain Settlement",
 ];
-
-const avatars = ["epl", "f1", "nba", "nfl", "ucl", "spl", "wc", "t20"];
 
 export default function ProductSection() {
   return (
@@ -22,11 +22,11 @@ export default function ProductSection() {
           Live Product
         </Badge>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
-          Market ready with live data.
+          Market Ready With Live Data
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
           Real users, real volume, real markets &mdash; across football,
-          cricket, motorsport, basketball, e-sports, and global events.
+          cricket, motorsport, basketball, esports, and global events.
         </p>
       </div>
 

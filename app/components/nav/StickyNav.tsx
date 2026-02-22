@@ -11,7 +11,6 @@ const NAV_ITEMS = [
   { id: "markets", label: "Markets" },
   { id: "roadmap", label: "Roadmap" },
   { id: "investment", label: "Investment" },
-  { id: "competitive", label: "Moat" },
 ];
 
 export default function StickyNav() {
@@ -71,12 +70,10 @@ export default function StickyNav() {
           />
 
           <div className="hidden md:flex items-center gap-1">
-            {NAV_ITEMS.map((item) => {
-              const href = (item as any).href ? (item as any).href : `#${item.id}`;
-              return (
+            {NAV_ITEMS.map((item) => (
                 <a
                   key={item.id}
-                  href={href}
+                  href={`#${item.id}`}
                   className={`px-3 py-1.5 text-sm rounded-full transition-all duration-300 ${active === item.id
                       ? "text-emerald-400 bg-emerald-500/10"
                       : "text-text-secondary font-medium hover:text-white"
@@ -84,8 +81,7 @@ export default function StickyNav() {
                 >
                   {item.label}
                 </a>
-              );
-            })}
+            ))}
           </div>
 
           <a

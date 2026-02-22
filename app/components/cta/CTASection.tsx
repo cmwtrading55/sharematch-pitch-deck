@@ -36,7 +36,7 @@ export default function CTASection() {
           </h2>
 
           <p className="text-lg text-text-secondary max-w-xl mx-auto mb-8">
-            KSA launch follows immediately. This is the last chance at seed
+            GCC launch follows immediately. This is the last chance at seed
             pricing.
           </p>
 

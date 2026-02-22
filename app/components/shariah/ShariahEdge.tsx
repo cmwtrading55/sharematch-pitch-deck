@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import SectionWrapper from "../common/SectionWrapper";
 import GlowCard from "../common/GlowCard";
 import Badge from "../common/Badge";
-import { Shield, ArrowLeftRight, Lock } from "lucide-react";
+import { Shield, ArrowLeftRight, Lock, Ban, Megaphone } from "lucide-react";
 
 const features = [
   {
@@ -17,20 +17,48 @@ const features = [
     icon: ArrowLeftRight,
     title: "Secondary Trading Approved",
     description:
-      "Full secondary market explicitly approved by scholars. This endorsement is globally unique and structurally impossible for incumbents to replicate.",
+      "Full secondary market explicitly approved by scholars. All tokens on the platform are structured in accordance with standards published by the AAOIFI (Accounting and Auditing Organisation for Islamic Financial Institutions). This endorsement is globally unique and structurally impossible for incumbents to replicate.",
   },
   {
     icon: Lock,
-    title: "Patent-Protected IP",
+    title: "Patent-Pending IP",
     description:
-      "Smart-contract logic, compliance workflows, and settlement mechanisms are patent-filed. Global trademark filings across EU, US, Canada, GCC, and UK.",
+      "Smart-contract logic, compliance workflows, and settlement mechanisms are patent-pending. Global trademark applications in progress across GCC, Asia Pacific and Europe.",
+  },
+];
+
+const moats = [
+  {
+    icon: Shield,
+    title: "Fatwa Approved",
+    description:
+      "An independent Shariah Fatwa from recognised Islamic scholars — the foundational credential that no competitor can fast-track or replicate.",
+  },
+  {
+    icon: Lock,
+    title: "Patent-Pending",
+    description:
+      "Proprietary technology is patent-pending with global trademark applications in progress. Core smart-contract logic, compliance workflows, and settlement mechanisms are all filed.",
+  },
+  {
+    icon: Ban,
+    title: "Competitors Structurally Excluded",
+    description:
+      "Incumbent platforms operate conventional structures that are fundamentally incompatible with Shariah principles — making credentialed entry into this market structurally unavailable to them.",
+  },
+  {
+    icon: Megaphone,
+    title: "Exclusive Shariah-Compliant Marketing Access",
+    description:
+      "Without Fatwa approval, no existing iGaming or prediction market company can credibly or effectively market to the Muslim audience. ShareMatch holds this approval — giving us a credentialed path to 1.5 billion potential customers that no incumbent can credibly access.",
   },
 ];
 
 const jurisdictions = [
   { label: "UK" },
-  { label: "UAE"},
-  { label: "Poland"},
+  { label: "UAE" },
+  { label: "Poland" },
+  { label: "BVI" },
 ];
 
 export default function ShariahEdge() {
@@ -44,8 +72,7 @@ export default function ShariahEdge() {
           Why Only We Can Own This Segment
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-          Shariah scholarship, multi-jurisdiction regulatory approvals, and
-          patent protection &mdash; a moat that compounds with time.
+          We are first to market
         </p>
       </div>
 
@@ -123,20 +150,49 @@ export default function ShariahEdge() {
                 &ldquo;
               </div>
               <blockquote className="text-text-secondary text-sm leading-tight mt-0 mb-0 italic">
-                The HAL‑AI Engine is a proprietary, Shariah-compliant utility accessible through IAT holding, enabling users to perform in-app research, analyse event data, and derive contextual insights in accordance with Shariah governance principles.
+                The HAL&#x2011;AI Engine is a proprietary, Shariah-compliant utility accessible through IAT holding, enabling users to perform in-app research, analyse event data, and derive contextual insights in accordance with Shariah governance principles.
               </blockquote>
               <div className="flex items-center gap-3 mt-3">
                 <div className="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center">
                   <Shield className="w-5 h-5 text-emerald-400" />
                 </div>
                 <div>
-                  <p className="text-sm font-medium">HAL‑AI Engine</p>
+                  <p className="text-sm font-medium">HAL&#x2011;AI Engine</p>
                   <p className="text-xs text-text-muted">Real-time analytics & scholar-assist</p>
                 </div>
               </div>
             </div>
           </div>
         </motion.div>
+      </div>
+
+      {/* The ShareMatch Moat — 4-fold */}
+      <div className="mt-20">
+        <div className="text-center mb-12">
+          <Badge variant="emerald" className="mb-4">
+            Defensibility
+          </Badge>
+          <h3 className="text-2xl md:text-4xl font-bold tracking-tight mb-4">
+            The ShareMatch Moat
+          </h3>
+          <p className="text-text-secondary text-lg max-w-2xl mx-auto">
+            First to market means lowest acquisition cost. Four reinforcing advantages that no competitor can replicate.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          {moats.map((m, i) => (
+            <GlowCard key={m.title} delay={i * 0.1} className="p-6 h-full flex flex-col">
+              <div className="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-4">
+                <m.icon className="w-6 h-6 text-emerald-400" />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">{m.title}</h3>
+              <p className="text-sm text-text-secondary leading-relaxed flex-grow">
+                {m.description}
+              </p>
+            </GlowCard>
+          ))}
+        </div>
       </div>
     </SectionWrapper>
   );

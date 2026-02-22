@@ -54,8 +54,8 @@ export default function HeroSection() {
           transition={{ delay: 0.6, duration: 0.6 }}
           className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-10 leading-loose"
         >
-          Fatwa issued. Shariah compliant. Patent-protected. Market ready.
-          Supported by leading Shariah scholars and EU regulated for Global Markets.
+          Fatwa issued. Shariah-compliant. Patent-pending. Market ready.
+          Supported by leading Shariah scholars and regulated across multiple jurisdictions.
         </motion.p>
 
         {/* Key stats row */}
@@ -104,12 +104,6 @@ export default function HeroSection() {
                 d="M19 14l-7 7m0 0l-7-7m7 7V3"
               />
             </svg>
-          </a>
-          <a
-            href="#opportunity"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/10 text-text-secondary font-medium hover:border-emerald-500/30 hover:text-text-primary transition-all duration-300"
-          >
-            See the Opportunity
           </a>
         </motion.div>
       </div>

@@ -32,7 +32,7 @@ const comparables = [
   },
   {
     name: "ShareMatch",
-    badge: "Shariah Compliant",
+    badge: "Shariah-Compliant",
     badgeVariant: "amber" as const,
     valuation: 64,
     suffix: "M",
@@ -53,12 +53,12 @@ export default function OpportunitySection() {
           Market Context
         </Badge>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
-          $12B Valuations. Zero Shariah Coverage.
+          Record Valuations. Haram Fintech Activities.
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-          Prediction markets are the fastest-growing asset class in fintech.
-          ShareMatch owns the only segment the incumbents structurally cannot
-          enter.
+          Prediction markets are the fastest-growing category in Fintech &mdash;
+          valued at $12B and growing. ShareMatch captures the only segment
+          incumbents cannot enter.
         </p>
       </div>
 
@@ -126,7 +126,7 @@ export default function OpportunitySection() {
         className="text-center pt-8 pb-8 px-8 xl:pt-2 xl:pb-2 rounded-2xl bg-gradient-to-br from-emerald-900/50 to-bg-secondary border border-emerald-500/10"
       >
         <p className="text-text-secondary mb-2 text-sm uppercase tracking-wider">
-          Total Addressable Market
+          SHAREMATCH&rsquo;S TOTAL ADDRESSABLE MARKET
         </p>
         <AnimatedCounter
           target={7.5}
@@ -135,9 +135,10 @@ export default function OpportunitySection() {
           decimals={1}
           className="text-5xl md:text-6xl font-bold text-emerald-400"
         />
-        <p className="text-text-secondary mt-2">
-          Islamic Finance &mdash; growing 10% annually, entirely unserved by
-          digital markets
+        <p className="text-xs text-text-muted mt-1 mb-1">Islamic Finance industry size</p>
+        <p className="text-text-secondary mt-1">
+          Growing ~10% annually, entirely ignored by
+          existing digital markets
         </p>
       </motion.div>
     </SectionWrapper>

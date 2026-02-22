@@ -30,9 +30,9 @@ const milestones = [
   },
   {
     date: "May 2026",
-    title: "E-Sports Markets & Series A",
+    title: "Esports Markets & Series A",
     detail:
-      "E-sports market launch. 78,000 projected users. Series A fundraise targeting £400M valuation.",
+      "Esports market launch. 78,000 projected users. Series A fundraise targeting £400M valuation.",
     valuation: "£400M",
     users: "78,000",
   },
@@ -45,7 +45,7 @@ const milestones = [
   },
   {
     date: "Jul 2026",
-    title: "E-Sports World Cup",
+    title: "Esports World Cup",
     detail:
       "Riyadh. Twitch, Discord, and creator collaborations. Series B targeting £1BN valuation.",
     valuation: "£1BN",

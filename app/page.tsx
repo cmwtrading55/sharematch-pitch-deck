@@ -6,9 +6,7 @@ import ShariahEdge from "./components/shariah/ShariahEdge";
 
 import ProductSection from "./components/product/ProductSection";
 import MarketSection from "./components/market/MarketSection";
-import CapitalSection from "./components/capital/CapitalSection";
 import RoadmapSection from "./components/roadmap/RoadmapSection";
-import CompetitiveSection from "./components/competitive/CompetitiveSection";
 
 import CTASection from "./components/cta/CTASection";
 
@@ -29,9 +27,6 @@ export default function Home() {
       <RoadmapSection />
       <InvestmentSection />
       <Divider />
-      <CapitalSection />
-      <CompetitiveSection />
-
       <CTASection />
     </main>
   );
