@@ -55,11 +55,10 @@ export default function StickyNav() {
       />
 
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
             ? "bg-bg-primary/80 backdrop-blur-xl border-b border-white/5 py-3"
             : "bg-transparent py-5"
-        }`}
+          }`}
       >
         <div className="section-container flex items-center justify-between">
           <Image
@@ -67,9 +66,8 @@ export default function StickyNav() {
             alt="ShareMatch"
             width={200}
             height={48}
-            className={`transition-all duration-300 ${
-              scrolled ? "h-12 w-auto" : "h-16 w-auto"
-            }`}
+            className={`transition-all duration-300 ${scrolled ? "h-12 w-auto" : "h-16 w-auto"
+              }`}
           />
 
           <div className="hidden md:flex items-center gap-1">
@@ -79,11 +77,10 @@ export default function StickyNav() {
                 <a
                   key={item.id}
                   href={href}
-                  className={`px-3 py-1.5 text-sm rounded-full transition-all duration-300 ${
-                    active === item.id
+                  className={`px-3 py-1.5 text-sm rounded-full transition-all duration-300 ${active === item.id
                       ? "text-emerald-400 bg-emerald-500/10"
-                      : "text-text-muted hover:text-text-primary"
-                  }`}
+                      : "text-text-secondary font-medium hover:text-white"
+                    }`}
                 >
                   {item.label}
                 </a>
@@ -93,7 +90,7 @@ export default function StickyNav() {
 
           <a
             href="#investment"
-            className="hidden md:inline-flex items-center px-5 py-2 text-sm font-medium rounded-full bg-emerald-900 text-white hover:bg-emerald-700 transition-colors"
+            className="hidden md:inline-flex items-center px-5 py-2 text-sm font-semibold rounded-full bg-emerald-500 text-bg-primary hover:bg-emerald-400 transition-colors"
           >
             Invest Now
           </a>

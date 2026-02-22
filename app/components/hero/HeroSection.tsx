@@ -5,7 +5,7 @@ import Badge from "../common/Badge";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center gradient-mesh overflow-hidden">
+    <section className="relative min-h-[90vh] pb-12 flex items-center justify-center gradient-mesh overflow-hidden">
       {/* Subtle grid overlay */}
       <div
         className="absolute inset-0 opacity-[0.03]"
@@ -16,7 +16,7 @@ export default function HeroSection() {
         }}
       />
 
-      <div className="section-container relative z-10 text-center pt-24">
+      <div className="section-container relative z-10 text-center pt-16">
         {/* Closing date badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-10 leading-loose"
         >
           Fatwa issued. Shariah compliant. Patent-protected. Market ready.
           Supported by leading Shariah scholars and EU regulated for Global Markets.
@@ -88,7 +88,7 @@ export default function HeroSection() {
         >
           <a
             href="#investment"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-emerald-900 text-white font-medium text-lg hover:bg-emerald-700 transition-all duration-300 hover:-translate-y-0.5 shimmer"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-emerald-600 text-white font-medium text-lg hover:bg-emerald-500 transition-all duration-300 hover:-translate-y-0.5 shimmer"
           >
             View Investment Terms
             <svg

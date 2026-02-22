@@ -114,7 +114,7 @@ export default function MarketSection() {
       {/* Phase 2 markets grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
         {markets.slice(1).map((m, i) => (
-          <GlowCard key={m.region} delay={i * 0.1} className="p-5">
+          <GlowCard key={m.region} delay={i * 0.1} className="p-5 h-full flex flex-col">
             <h4 className="text-lg font-semibold mb-1">{m.region}</h4>
             <AnimatedCounter
               target={m.tamNum}
@@ -122,14 +122,14 @@ export default function MarketSection() {
               className="text-2xl font-bold text-emerald-400"
             />
             <p className="text-xs text-text-muted mb-3">Addressable Users</p>
-            <div className="space-y-1.5 mb-4">
+            <div className="space-y-1.5 mb-4 flex-grow">
               {m.segments.map((s) => (
                 <p key={s} className="text-xs text-text-secondary">
                   {s}
                 </p>
               ))}
             </div>
-            <div className="flex flex-wrap gap-1.5">
+            <div className="flex flex-wrap gap-1.5 mt-auto">
               {m.rails.map((r) => (
                 <span
                   key={r}

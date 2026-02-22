@@ -68,12 +68,12 @@ export default function CompetitiveSection() {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {moats.map((m, i) => (
-          <GlowCard key={m.title} delay={i * 0.1} className="p-6">
+          <GlowCard key={m.title} delay={i * 0.1} className="p-6 h-full flex flex-col">
             <div className="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-4">
               <m.icon className="w-6 h-6 text-emerald-400" />
             </div>
             <h3 className="text-lg font-semibold mb-2">{m.title}</h3>
-            <p className="text-sm text-text-secondary leading-relaxed">
+            <p className="text-sm text-text-secondary leading-relaxed flex-grow">
               {m.description}
             </p>
           </GlowCard>

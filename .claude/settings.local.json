@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo list cmwtrading55 --limit 50 2>&1)",
+      "Bash(echo \"=== WINDOWS mission-control ===\" && git -C \"/mnt/c/Users/wilde/Desktop/Developer/mission-control\" log --oneline -3 2>&1 && git -C \"/mnt/c/Users/wilde/Desktop/Developer/mission-control\" status --short 2>&1 && echo \"\" && echo \"=== LINUX mission-control ===\" && git -C \"/home/cmwtrading55/developer/cmwtrading55/mission-control\" log --oneline -3 2>&1 && git -C \"/home/cmwtrading55/developer/cmwtrading55/mission-control\" status --short 2>&1)"
+    ]
+  }
+}

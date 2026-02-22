@@ -12,18 +12,23 @@ import CompetitiveSection from "./components/competitive/CompetitiveSection";
 
 import CTASection from "./components/cta/CTASection";
 
+const Divider = () => <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent w-full" />;
+
 export default function Home() {
   return (
     <main>
       <StickyNav />
       <HeroSection />
+      <Divider />
       <OpportunitySection />
+      <Divider />
       <ProductSection />
       <ShariahEdge />
-
+      <Divider />
       <MarketSection />
       <RoadmapSection />
       <InvestmentSection />
+      <Divider />
       <CapitalSection />
       <CompetitiveSection />
 
