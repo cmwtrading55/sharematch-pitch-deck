@@ -6,7 +6,7 @@ import SectionWrapper from "../common/SectionWrapper";
 import Badge from "../common/Badge";
 
 const stats = [
-  "Fatwa Approved",
+  "Fatwa Approval",
   "Live & Trading",
   "RWA Structure",
   "Digital Payments",
