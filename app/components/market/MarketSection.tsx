@@ -43,10 +43,9 @@ const phases = [
     tam: "340M+",
     tamNum: 340,
     segments: [
-      "Türkiye: 84M+ Muslims, major fintech market",
-      "Egypt: 95M+ Muslims, largest Arab market",
-      "Morocco, Algeria, Tunisia: 75M+ combined",
-      "Levant & Azerbaijan: 65M+ combined",
+      "Türkiye & Azerbaijan: 93M+ Muslims, mature fintech infrastructure",
+      "Egypt: 95M+ Muslims, largest Arab market by population",
+      "North Africa & Levant: 140M+ across Morocco, Algeria, Tunisia, Jordan, Lebanon, Iraq",
     ],
     rails: ["Fawry", "CashPlus", "Papara", "Local Rails"],
     fullWidth: true,
