@@ -38,16 +38,17 @@ const phases = [
   },
   {
     phase: "Phase 3 — Series B",
-    region: "North Africa & Levant",
-    focus: "MENA expansion beyond GCC",
-    tam: "250M+",
-    tamNum: 250,
+    region: "Greater MENA",
+    focus: "Türkiye, North Africa, and the Levant",
+    tam: "340M+",
+    tamNum: 340,
     segments: [
+      "Türkiye: 84M+ Muslims, major fintech market",
       "Egypt: 95M+ Muslims, largest Arab market",
       "Morocco, Algeria, Tunisia: 75M+ combined",
-      "Levant: Jordan, Lebanon, Iraq — 55M+ combined",
+      "Levant & Azerbaijan: 65M+ combined",
     ],
-    rails: ["Fawry", "CashPlus", "Local Rails"],
+    rails: ["Fawry", "CashPlus", "Papara", "Local Rails"],
     fullWidth: true,
   },
   {
@@ -90,7 +91,7 @@ export default function MarketSection() {
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
           ~2 billion Muslims worldwide. ~1.5 billion are mobile-connected.
-          Five phases of expansion across GCC, Asia Pacific, North Africa &amp; Levant,
+          Five phases of expansion across GCC, Asia Pacific, Greater MENA,
           Sub-Saharan Africa, and the rest of the world.
         </p>
       </div>
