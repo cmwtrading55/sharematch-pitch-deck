@@ -29,7 +29,7 @@ export default function HeroSection() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-400" />
             </span>
-            Seed Round Closing 6th March 2026
+            Seed Round Closing 27th March 2026
           </Badge>
         </motion.div>
 
@@ -66,8 +66,8 @@ export default function HeroSection() {
           className="flex flex-wrap justify-center gap-6 md:gap-10 mb-12"
         >
           {[
-            { value: "£4M", label: "Raising" },
-            { value: "£64M", label: "Post-Money" },
+            { value: "$5.2M", label: "Raising" },
+            { value: "$83M", label: "Post-Money" },
             { value: "EIS", label: "UK Tax Relief" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">

@@ -28,7 +28,7 @@ export default function CTASection() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-400" />
             </span>
-            Seed Round Closing 6th March 2026
+            Seed Round Closing 27th March 2026
           </Badge>
 
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">

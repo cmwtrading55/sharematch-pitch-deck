@@ -13,11 +13,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "ShareMatch — Shariah-Compliant Digital Markets Platform",
   description:
-    "The first Shariah-compliant tokenised asset marketplace. Seed round closing 6th March 2026 at £64M post-money. EIS eligible.",
+    "The first Shariah-compliant tokenised asset marketplace. Seed round closing 27th March 2026 at $83M post-money. EIS eligible.",
   openGraph: {
     title: "ShareMatch — Shariah-Compliant Digital Markets Platform",
     description:
-      "The first Shariah-compliant tokenised asset marketplace. Seed round closing 6th March 2026 at £64M post-money. EIS eligible.",
+      "The first Shariah-compliant tokenised asset marketplace. Seed round closing 27th March 2026 at $83M post-money. EIS eligible.",
     type: "website",
   },
 };

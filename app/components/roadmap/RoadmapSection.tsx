@@ -10,8 +10,8 @@ const milestones = [
     date: "Feb 2026",
     title: "Seed Fundraise",
     detail:
-      "£4M raise at £64M post-money valuation. Independent Shariah Fatwa secured. Platform live and trading.",
-    valuation: "£64M",
+      "$5.2M raise at $83M post-money valuation. Independent Shariah Fatwa secured. Platform live and trading.",
+    valuation: "$83M",
     completed: true,
     highlight: true,
   },
@@ -32,8 +32,8 @@ const milestones = [
     date: "May 2026",
     title: "Esports Markets & Series A",
     detail:
-      "Esports market launch. 78,000 projected users. Series A fundraise targeting £400M valuation.",
-    valuation: "£400M",
+      "Esports market launch. 78,000 projected users. Series A fundraise targeting $520M valuation.",
+    valuation: "$520M",
     users: "78,000",
   },
   {
@@ -47,8 +47,8 @@ const milestones = [
     date: "Jul 2026",
     title: "Esports World Cup",
     detail:
-      "Riyadh. Twitch, Discord, and creator collaborations. Series B targeting £1BN valuation.",
-    valuation: "£1BN",
+      "Riyadh. Twitch, Discord, and creator collaborations. Series B targeting $1.3BN valuation.",
+    valuation: "$1.3BN",
   },
 ];
 

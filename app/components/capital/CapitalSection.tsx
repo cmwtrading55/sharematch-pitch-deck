@@ -16,37 +16,37 @@ const allocation = [
   {
     name: "KSA & GCC Acquisition",
     value: 35,
-    amount: 1.4,
+    amount: 1.8,
     color: "#10b981",
     detail: "Performance marketing, influencer networks, stadium exposure",
   },
   {
     name: "Liquidity & Market Making",
     value: 25,
-    amount: 1.0,
+    amount: 1.3,
     color: "#047857",
     detail: "Order book depth, settlement reserves, treasury management",
   },
   {
     name: "Engineering & Product",
     value: 25,
-    amount: 1.0,
+    amount: 1.3,
     color: "#34d399",
     detail: "Mobile app, trading engine, AI features, infrastructure",
   },
   {
     name: "Shariah & Regulatory",
     value: 15,
-    amount: 0.6,
+    amount: 0.8,
     color: "#f59e0b",
     detail: "Ongoing Shariah compliance, licensing, legal, audit",
   },
 ];
 
 const cacSteps = [
-  { period: "Launch — May 2026", cac: 25 },
-  { period: "Jun 2026 — May 2027", cac: 50 },
-  { period: "Jun 2027 onwards", cac: 75 },
+  { period: "Launch — May 2026", cac: 33 },
+  { period: "Jun 2026 — May 2027", cac: 65 },
+  { period: "Jun 2027 onwards", cac: 98 },
 ];
 
 const partners = [
@@ -69,10 +69,10 @@ export default function CapitalSection() {
           Capital Deployment
         </Badge>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
-          How the <span className="text-emerald-400">£4M</span> Gets Deployed
+          How the <span className="text-emerald-400">$5.2M</span> Gets Deployed
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-          Every pound is tied to verified users, deposits, and active trading
+          Every dollar is tied to verified users, deposits, and active trading
           behaviour.
         </p>
       </div>
@@ -117,7 +117,7 @@ export default function CapitalSection() {
           {/* Center text */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
             <div className="text-center">
-              <p className="text-3xl font-bold">£4M</p>
+              <p className="text-3xl font-bold">$5.2M</p>
               <p className="text-xs text-text-muted">Total Raise</p>
             </div>
           </div>
@@ -142,7 +142,7 @@ export default function CapitalSection() {
                 <div className="flex items-center justify-between">
                   <h4 className="font-semibold text-sm">{item.name}</h4>
                   <span className="text-emerald-400 font-bold">
-                    £{item.amount}M
+                    ${item.amount}M
                   </span>
                 </div>
                 <p className="text-xs text-text-muted mt-1">{item.detail}</p>
@@ -170,7 +170,7 @@ export default function CapitalSection() {
               <div className="text-center p-5 rounded-2xl glass-card min-w-[160px]">
                 <AnimatedCounter
                   target={step.cac}
-                  prefix="£"
+                  prefix="$"
                   className="text-3xl font-bold text-amber-400"
                 />
                 <p className="text-xs text-text-muted mt-1">{step.period}</p>
