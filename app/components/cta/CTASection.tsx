@@ -51,7 +51,7 @@ export default function CTASection() {
             <Shield className="w-4 h-4 text-emerald-400" />
             <span className="text-sm text-text-secondary">
               <span className="text-emerald-400 font-semibold">EIS Eligible</span>{" "}
-              &mdash; UK investors: up to 30% income tax relief
+              , UK investors: up to 30% income tax relief
             </span>
           </motion.div>
 

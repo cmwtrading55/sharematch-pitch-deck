@@ -25,7 +25,7 @@ export default function ProductSection() {
           Market Ready With Live Data
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-          Real users, real volume, real markets &mdash; across football,
+          Real users, real volume, real markets, across football,
           cricket, motorsport, basketball, esports, and global events.
         </p>
       </div>
@@ -54,7 +54,7 @@ export default function ProductSection() {
             <div className="relative aspect-16/10 overflow-hidden mx-auto w-full max-w-full">
               <Image
                 src="/screenshots/LoggedView.png"
-                alt="ShareMatch logged-in view — full platform"
+                alt="ShareMatch logged-in view, full platform"
                 fill
                 className="object-contain object-center p-2"
                 priority
@@ -77,7 +77,7 @@ export default function ProductSection() {
             <div className="relative aspect-16/10 overflow-hidden mx-auto w-full max-w-full">
               <Image
                 src="/screenshots/HAL-AI.png"
-                alt="HAL AI — analytics view"
+                alt="HAL AI, analytics view"
                 fill
                 className="object-cover object-center"
               />

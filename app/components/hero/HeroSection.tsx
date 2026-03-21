@@ -16,7 +16,7 @@ export default function HeroSection() {
         }}
       />
 
-      <div className="section-container relative z-10 text-center pt-16">
+      <div className="section-container relative z-10 text-center pt-20 md:pt-24">
         {/* Closing date badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

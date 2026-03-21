@@ -55,8 +55,8 @@ export default function StickyNav() {
 
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
-            ? "bg-bg-primary/80 backdrop-blur-xl border-b border-white/5 py-3"
-            : "bg-transparent py-5"
+            ? "bg-bg-primary/80 backdrop-blur-xl border-b border-white/5 py-2 md:py-3"
+            : "bg-transparent py-3 md:py-5"
           }`}
       >
         <div className="section-container flex items-center justify-between">
@@ -65,11 +65,11 @@ export default function StickyNav() {
             alt="ShareMatch"
             width={200}
             height={48}
-            className={`transition-all duration-300 ${scrolled ? "h-12 w-auto" : "h-16 w-auto"
+            className={`transition-all duration-300 ${scrolled ? "h-8 md:h-12 w-auto" : "h-10 md:h-16 w-auto"
               }`}
           />
 
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden lg:flex items-center gap-1">
             {NAV_ITEMS.map((item) => (
                 <a
                   key={item.id}
@@ -86,7 +86,7 @@ export default function StickyNav() {
 
           <a
             href="#investment"
-            className="hidden md:inline-flex items-center px-5 py-2 text-sm font-semibold rounded-full bg-emerald-500 text-bg-primary hover:bg-emerald-400 transition-colors"
+            className="hidden lg:inline-flex items-center px-5 py-2 text-sm font-semibold rounded-full bg-emerald-500 text-bg-primary hover:bg-emerald-400 transition-colors"
           >
             Invest Now
           </a>

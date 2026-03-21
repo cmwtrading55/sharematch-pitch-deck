@@ -9,7 +9,7 @@ import { Globe, CreditCard } from "lucide-react";
 
 const phases = [
   {
-    phase: "Phase 1 — Seed",
+    phase: "Phase 1,Seed",
     region: "GCC",
     focus: "Initial launch focused on KSA",
     tam: "40M+",
@@ -23,7 +23,7 @@ const phases = [
     highlight: true,
   },
   {
-    phase: "Phase 2 — Series A",
+    phase: "Phase 2,Series A",
     region: "Asia Pacific",
     focus: "Indonesia, India, Pakistan, Bangladesh",
     tam: "800M+",
@@ -37,7 +37,7 @@ const phases = [
     fullWidth: true,
   },
   {
-    phase: "Phase 3 — Series B",
+    phase: "Phase 3,Series B",
     region: "Greater MENA",
     focus: "Türkiye, North Africa, and the Levant",
     tam: "340M+",
@@ -51,7 +51,7 @@ const phases = [
     fullWidth: true,
   },
   {
-    phase: "Phase 4 — The Future",
+    phase: "Phase 4,The Future",
     region: "Sub-Saharan Africa",
     focus: "Mobile-first Muslim communities",
     tam: "300M+",
@@ -64,7 +64,7 @@ const phases = [
     fullWidth: false,
   },
   {
-    phase: "Phase 5 — The Future",
+    phase: "Phase 5,The Future",
     region: "Rest of the World",
     focus: "Global Muslim diaspora",
     tam: "100M+",
@@ -95,7 +95,7 @@ export default function MarketSection() {
         </p>
       </div>
 
-      {/* Phase 1 — GCC (Seed) — full width highlight */}
+      {/* Phase 1,GCC (Seed),full width highlight */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -108,7 +108,7 @@ export default function MarketSection() {
             <Badge variant="amber" className="mb-2">
               {phases[0].phase}
             </Badge>
-            <h3 className="text-2xl font-bold">{phases[0].region} &mdash; {phases[0].focus}</h3>
+            <h3 className="text-2xl font-bold">{phases[0].region},{phases[0].focus}</h3>
             <p className="text-text-secondary text-sm">
               Highest immediate conversion. Foundation for viral network effects.
             </p>
@@ -145,7 +145,7 @@ export default function MarketSection() {
         </div>
       </motion.div>
 
-      {/* Phase 2 & 3 — full width cards */}
+      {/* Phase 2 & 3,full width cards */}
       {phases.slice(1, 3).map((p, i) => (
         <motion.div
           key={p.region}
@@ -196,7 +196,7 @@ export default function MarketSection() {
         </motion.div>
       ))}
 
-      {/* Phase 4 & 5 — half width cards */}
+      {/* Phase 4 & 5,half width cards */}
       <div className="grid md:grid-cols-2 gap-6">
         {phases.slice(3).map((p, i) => (
           <GlowCard key={p.region} delay={i * 0.1} className="p-6 h-full flex flex-col">

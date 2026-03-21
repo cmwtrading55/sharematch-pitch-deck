@@ -10,7 +10,7 @@ export default function InvestmentSection() {
     <SectionWrapper id="investment" className="bg-bg-secondary py-5 md:py-10 xl:pt-4">
       <div className="text-center mb-5 xl:mb-4">
         <Badge variant="amber" className="mb-4">
-          <Clock className="w-3 h-3" /> Seed Round &mdash; Closing 27th March
+          <Clock className="w-3 h-3" /> Seed Round, Closing 27th March
         </Badge>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
           Investment Terms
@@ -50,7 +50,7 @@ export default function InvestmentSection() {
               <p className="text-xs text-text-muted">Total Equity</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-amber-400">$12B</p>
+              <p className="text-2xl font-bold text-amber-400">$22B</p>
               <p className="text-xs text-text-muted">Comparable Valuations</p>
             </div>
             <div>
@@ -71,7 +71,7 @@ export default function InvestmentSection() {
       >
         <div className="p-6 rounded-2xl glass-card border border-white/10">
           <div className="flex items-center justify-between mb-3">
-            <h4 className="text-sm font-semibold text-text-secondary uppercase tracking-wider">Fundraise Progress</h4>
+            <h3 className="text-sm font-semibold text-text-secondary uppercase tracking-wider">Fundraise Progress</h3>
             <span className="text-xs text-amber-400 font-semibold">60% Committed</span>
           </div>
 
@@ -139,7 +139,7 @@ export default function InvestmentSection() {
           <div className="text-sm">
             <span className="text-emerald-400 font-semibold">EIS Eligible</span>{" "}
             <span className="text-text-secondary">
-              &mdash; UK investors may claim up to{" "}
+              , UK investors may claim up to{" "}
               <span className="text-text-primary font-medium">30% income tax relief</span>{" "}
               via the Enterprise Investment Scheme. Capital gains tax exemption on qualifying shares held 3+ years.
             </span>

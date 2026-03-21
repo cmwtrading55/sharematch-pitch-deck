@@ -44,8 +44,8 @@ const allocation = [
 ];
 
 const cacSteps = [
-  { period: "Launch — May 2026", cac: 33 },
-  { period: "Jun 2026 — May 2027", cac: 65 },
+  { period: "Launch to May 2026", cac: 33 },
+  { period: "Jun 2026 to May 2027", cac: 65 },
   { period: "Jun 2027 onwards", cac: 98 },
 ];
 
@@ -155,7 +155,7 @@ export default function CapitalSection() {
       {/* CAC Progression */}
       <div className="mb-16">
         <h3 className="text-xl font-semibold mb-6 text-center">
-          CAC Strategy &mdash; Efficient Early, Scales With Category
+          CAC Strategy, Efficient Early, Scales With Category
         </h3>
         <div className="flex flex-col md:flex-row items-center justify-center gap-4">
           {cacSteps.map((step, i) => (

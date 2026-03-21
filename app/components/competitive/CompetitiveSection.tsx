@@ -47,7 +47,7 @@ const moats = [
     icon: Rocket,
     title: "First-Mover Advantage",
     description:
-      "Category creator with patent protection on core logic. Head start compounds &mdash; every new user, market, and jurisdiction widens the gap.",
+      "Category creator with patent protection on core logic. Head start compounds, every new user, market, and jurisdiction widens the gap.",
   },
 ];
 

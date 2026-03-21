@@ -106,7 +106,7 @@ export default function RoadmapSection() {
                     }`}
                   >
                     <p className="text-xs text-text-muted mb-1">{m.date}</p>
-                    <h4 className="text-lg font-semibold mb-1">{m.title}</h4>
+                    <h3 className="text-lg font-semibold mb-1">{m.title}</h3>
                     <p className="text-sm text-text-secondary">{m.detail}</p>
                     {(m.valuation || m.users) && (
                       <div className="mt-3 flex gap-2 flex-wrap justify-start md:justify-end">

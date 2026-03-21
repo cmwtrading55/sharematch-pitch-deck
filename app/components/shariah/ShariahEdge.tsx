@@ -11,7 +11,7 @@ const features = [
     icon: Shield,
     title: "Fatwa Backed & Haqq Mali",
     description:
-      "Independent Shariah Fatwa recognises our tokens as Haqq Mali — a legitimate financial asset that can be possessed, transferred, inherited, and traded under Islamic law.",
+      "Independent Shariah Fatwa recognises our tokens as Haqq Mali,a legitimate financial asset that can be possessed, transferred, inherited, and traded under Islamic law.",
   },
   {
     icon: ArrowLeftRight,
@@ -32,7 +32,7 @@ const moats = [
     icon: Shield,
     title: "Fatwa Approved",
     description:
-      "An independent Shariah Fatwa from recognised Islamic scholars — the foundational credential that no competitor can fast-track or replicate.",
+      "An independent Shariah Fatwa from recognised Islamic scholars,the foundational credential that no competitor can fast-track or replicate.",
   },
   {
     icon: Lock,
@@ -44,13 +44,13 @@ const moats = [
     icon: Ban,
     title: "Competitors Structurally Excluded",
     description:
-      "Incumbent platforms operate conventional structures that are fundamentally incompatible with Shariah principles — making credentialed entry into this market structurally unavailable to them.",
+      "Incumbent platforms operate conventional structures that are fundamentally incompatible with Shariah principles,making credentialed entry into this market structurally unavailable to them.",
   },
   {
     icon: Megaphone,
     title: "Exclusive Shariah-Compliant Marketing Access",
     description:
-      "Without Fatwa approval, no existing iGaming or prediction market company can credibly or effectively market to the Muslim audience. ShareMatch holds this approval — giving us a credentialed path to 1.5 billion potential customers that no incumbent can credibly access.",
+      "Without Fatwa approval, no existing iGaming or prediction market company can credibly or effectively market to the Muslim audience. ShareMatch holds this approval,giving us a credentialed path to 1.5 billion potential customers that no incumbent can credibly access.",
   },
 ];
 
@@ -166,7 +166,7 @@ export default function ShariahEdge() {
         </motion.div>
       </div>
 
-      {/* The ShareMatch Moat — 4-fold */}
+      {/* The ShareMatch Moat,4-fold */}
       <div className="mt-20">
         <div className="text-center mb-12">
           <Badge variant="emerald" className="mb-4">
