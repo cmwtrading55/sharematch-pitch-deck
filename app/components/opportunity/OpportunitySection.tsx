@@ -10,10 +10,10 @@ const comparables = [
     name: "Kalshi",
     badge: "Regulated",
     badgeVariant: "muted" as const,
-    valuation: 12,
+    valuation: 22,
     suffix: "B",
     prefix: "$",
-    source: "Feb 2026 Secondary Market",
+    source: "Mar 2026 Series C (CoinDesk/Bloomberg)",
     barColor: "bg-text-muted/30",
     status: "US Market Leader",
     bg: "glass-card",
@@ -56,9 +56,9 @@ export default function OpportunitySection() {
           Record Valuations. Haram Fintech Activities.
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-          Prediction markets are the fastest-growing category in Fintech &mdash;
-          valued at $12B and growing. ShareMatch captures the only segment
-          incumbents cannot enter.
+          Prediction markets are the fastest-growing category in Fintech,
+          with Kalshi alone now valued at $22B. ShareMatch captures the only
+          segment incumbents cannot enter.
         </p>
       </div>
 
