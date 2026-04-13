@@ -10,14 +10,14 @@ export default function InvestmentSection() {
     <SectionWrapper id="investment" className="bg-bg-secondary py-5 md:py-10 xl:pt-4">
       <div className="text-center mb-5 xl:mb-4">
         <Badge variant="amber" className="mb-4">
-          <Clock className="w-3 h-3" /> Seed Round, Closing 27th March
+          <Clock className="w-3 h-3" /> Seed Round, Closing 24th April
         </Badge>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
           Investment Terms
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
           $5.2M at $83M post-money. Round closes{" "}
-          <span className="text-amber-400 font-semibold">27th March 2026</span>.
+          <span className="text-amber-400 font-semibold">24th April 2026</span>.
         </p>
       </div>
 
@@ -115,7 +115,7 @@ export default function InvestmentSection() {
             <div className="flex items-center justify-between text-[10px] text-text-muted">
               <div className="flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-emerald-500" />
-                <span>Closes 27th March 2026</span>
+                <span>Closes 24th April 2026</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />

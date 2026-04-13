@@ -7,7 +7,7 @@ import Badge from "../common/Badge";
 
 const milestones = [
   {
-    date: "Mar 2026",
+    date: "Apr 2026",
     title: "Seed Fundraise",
     detail:
       "$5.2M raise at $83M post-money valuation. Independent Shariah Fatwa secured. Platform live and trading.",
@@ -16,17 +16,10 @@ const milestones = [
     highlight: true,
   },
   {
-    date: "Apr 2026",
-    title: "KSA Platform Launch",
-    detail:
-      "1,000 VIP users. Invitation-only rollout in Saudi Arabia with STC Pay, urpay, and tiqmo payment rails.",
-    users: "1,000",
-  },
-  {
     date: "May 2026",
-    title: "App Launch, GCC Expansion & Esports",
+    title: "KSA Launch, App Release & GCC Expansion",
     detail:
-      "Full mobile app release. Wider GCC rollout and Indonesia market entry. Esports market launch. 78,000 projected users. Series A fundraise targeting $520M valuation.",
+      "1,000 VIP users. Invitation-only rollout in Saudi Arabia with STC Pay, urpay, and tiqmo payment rails. Full mobile app release. Wider GCC rollout and Indonesia market entry. Esports market launch. 78,000 projected users. Series A fundraise targeting $520M valuation.",
     valuation: "$520M",
     users: "78,000",
   },
