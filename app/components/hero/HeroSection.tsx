@@ -17,7 +17,17 @@ export default function HeroSection() {
       />
 
       <div className="section-container relative z-10 text-center pt-20 md:pt-24">
-        {/* Closing date badge */}
+        {/* Eyebrow */}
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1, duration: 0.6 }}
+          className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.35em] text-amber-400/90 mb-5"
+        >
+          The Future of Halal SportFi
+        </motion.p>
+
+        {/* Status badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -29,7 +39,7 @@ export default function HeroSection() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-400" />
             </span>
-            Seed Round Closing 24th April 2026
+            Live &amp; Trading &middot; Seed Round Open
           </Badge>
         </motion.div>
 
@@ -38,13 +48,11 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8, ease: [0.22, 0.61, 0.36, 1] }}
-          className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6 max-w-5xl mx-auto"
+          className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 max-w-5xl mx-auto"
         >
           The World&rsquo;s First{" "}
-          <span className="bg-gradient-to-r from-emerald-400 to-emerald-300 bg-clip-text text-transparent">
-            Shariah-Compliant
-          </span>{" "}
-          Digital Markets Platform
+          <span className="text-emerald-gradient">Shariah-Compliant</span>{" "}
+          Sports Investment Market
         </motion.h1>
 
         {/* Sub-headline */}
@@ -52,10 +60,11 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-10 leading-loose"
+          className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Fatwa issued. Shariah-compliant. Patent-pending. Market ready.
-          Supported by leading Shariah scholars and regulated across multiple jurisdictions.
+          Live and trading on Solana. An official Fatwa, AAOIFI-standard assets
+          and patent-pending settlement, the only Halal alternative to
+          Polymarket, Kalshi and DraftKings.
         </motion.p>
 
         {/* Key stats row */}
@@ -63,21 +72,32 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.75, duration: 0.6 }}
-          className="flex flex-wrap justify-center gap-6 md:gap-10 mb-12"
+          className="flex flex-wrap items-center justify-center gap-6 md:gap-12 mb-5"
         >
           {[
-            { value: "$5.2M", label: "Raising" },
-            { value: "$83M", label: "Post-Money" },
+            { value: "£4M", label: "Raising" },
+            { value: "£64M", label: "Post-Money" },
             { value: "EIS", label: "UK Tax Relief" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
-              <p className="text-2xl md:text-3xl font-bold text-amber-400">
+              <p className="font-display text-3xl md:text-4xl font-bold text-gold-gradient">
                 {stat.value}
               </p>
-              <p className="text-xs text-text-muted mt-1">{stat.label}</p>
+              <p className="text-xs text-text-muted mt-1 uppercase tracking-wider">{stat.label}</p>
             </div>
           ))}
         </motion.div>
+
+        {/* Scarcity line */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.85, duration: 0.6 }}
+          className="text-sm text-text-secondary mb-10"
+        >
+          We do not expect to raise again this year.{" "}
+          <span className="text-amber-400 font-medium">This is the only chance to own ShareMatch.</span>
+        </motion.p>
 
         {/* CTA */}
         <motion.div

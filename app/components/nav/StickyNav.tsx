@@ -7,9 +7,11 @@ import Image from "next/image";
 const NAV_ITEMS = [
   { id: "opportunity", label: "Opportunity" },
   { id: "product", label: "Product" },
-  { id: "shariah", label: "Shariah Edge" },
+  { id: "partners", label: "Partners" },
+  { id: "shariah", label: "Shariah" },
   { id: "markets", label: "Markets" },
   { id: "roadmap", label: "Roadmap" },
+  { id: "team", label: "Team" },
   { id: "investment", label: "Investment" },
 ];
 

@@ -7,35 +7,40 @@ import Badge from "../common/Badge";
 
 const milestones = [
   {
-    date: "Apr 2026",
-    title: "Seed Fundraise",
+    phase: "Live Now",
+    title: "Platform Live & Trading",
     detail:
-      "$5.2M raise at $83M post-money valuation. Independent Shariah Fatwa secured. Platform live and trading.",
-    valuation: "$83M",
+      "Built on Solana. The exchange is live, with real users trading asset-backed performance tokens. Independent Shariah Fatwa secured and the seed round open.",
+    valuation: "£64M",
     completed: true,
     highlight: true,
   },
   {
-    date: "May 2026",
-    title: "KSA Launch, App Release & GCC Expansion",
+    phase: "Next",
+    title: "KSA Launch & Mobile App",
     detail:
-      "1,000 VIP users. Invitation-only rollout in Saudi Arabia with STC Pay, urpay, and tiqmo payment rails. Full mobile app release. Wider GCC rollout and Indonesia market entry. Esports market launch. 78,000 projected users. Series A fundraise targeting $520M valuation.",
-    valuation: "$520M",
+      "Invitation-only rollout in Saudi Arabia via MeshPay, alongside the full mobile app release. First 1,000 VIP users.",
+    users: "1,000 VIP",
+  },
+  {
+    phase: "Scaling",
+    title: "GCC Expansion & Esports",
+    detail:
+      "Wider GCC rollout and Indonesia market entry. Esports markets go live, with the Series A to follow.",
     users: "78,000",
   },
   {
-    date: "Jun 2026",
-    title: "FIFA World Cup",
+    phase: "Global Moment",
+    title: "FIFA World Cup Onboarding",
     detail:
-      "245,000 active users. Global onboarding funnel via the world's biggest sporting event.",
+      "Global onboarding funnel via the world's biggest sporting event, driving the next wave of active users.",
     users: "245,000",
   },
   {
-    date: "Jul 2026",
-    title: "Esports World Cup",
+    phase: "Beyond",
+    title: "Esports World Cup, Riyadh",
     detail:
-      "Riyadh. Twitch, Discord, and creator collaborations. Series B targeting $1.3BN valuation.",
-    valuation: "$1.3BN",
+      "Twitch, Discord, and creator collaborations at the world's largest esports event, with targeted expansion into esports demographics.",
   },
 ];
 
@@ -54,11 +59,11 @@ export default function RoadmapSection() {
           Roadmap
         </Badge>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
-          2026: The Inflection Year
+          The Road Ahead
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-          From seed to Series B in under 12 months. Every milestone is tied to
-          user growth, revenue, and market expansion.
+          Live and trading today. From here, every milestone is tied to user
+          growth, revenue, and market expansion, not a fixed calendar.
         </p>
       </div>
 
@@ -77,7 +82,7 @@ export default function RoadmapSection() {
             const isLeft = i % 2 === 0;
             return (
           <motion.div
-                key={m.date}
+                key={m.phase}
                 initial={{ opacity: 0, x: isLeft ? -30 : 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
@@ -98,7 +103,7 @@ export default function RoadmapSection() {
                       m.highlight ? "border-amber-500/30 glow-amber" : ""
                     }`}
                   >
-                    <p className="text-xs text-text-muted mb-1">{m.date}</p>
+                    <p className={`text-[11px] font-semibold uppercase tracking-wider mb-1 ${m.completed ? "text-emerald-400" : "text-amber-400"}`}>{m.phase}</p>
                     <h3 className="text-lg font-semibold mb-1">{m.title}</h3>
                     <p className="text-sm text-text-secondary">{m.detail}</p>
                     {(m.valuation || m.users) && (

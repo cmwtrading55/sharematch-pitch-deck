@@ -5,8 +5,12 @@ import OpportunitySection from "./components/opportunity/OpportunitySection";
 import ShariahEdge from "./components/shariah/ShariahEdge";
 
 import ProductSection from "./components/product/ProductSection";
+import PartnersSection from "./components/partners/PartnersSection";
 import MarketSection from "./components/market/MarketSection";
 import RoadmapSection from "./components/roadmap/RoadmapSection";
+import TeamSection from "./components/team/TeamSection";
+import CorporateStructure from "./components/structure/CorporateStructure";
+import UseOfProceeds from "./components/proceeds/UseOfProceeds";
 
 import CTASection from "./components/cta/CTASection";
 
@@ -21,10 +25,17 @@ export default function Home() {
       <OpportunitySection />
       <Divider />
       <ProductSection />
+      <Divider />
+      <PartnersSection />
       <ShariahEdge />
       <Divider />
       <MarketSection />
       <RoadmapSection />
+      <Divider />
+      <TeamSection />
+      <Divider />
+      <CorporateStructure />
+      <UseOfProceeds />
       <InvestmentSection />
       <Divider />
       <CTASection />

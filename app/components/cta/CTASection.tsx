@@ -28,7 +28,7 @@ export default function CTASection() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-400" />
             </span>
-            Seed Round Closing 24th April 2026
+            Seed Round Open Now
           </Badge>
 
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
@@ -36,7 +36,8 @@ export default function CTASection() {
           </h2>
 
           <p className="text-lg text-text-secondary max-w-xl mx-auto mb-8">
-            GCC launch follows immediately. This is the last chance at seed
+            The platform is live and the round is open. We do not expect to raise
+            again this year, this is the only chance to own ShareMatch at seed
             pricing.
           </p>
 

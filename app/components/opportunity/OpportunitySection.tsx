@@ -12,7 +12,7 @@ const comparables = [
     badgeVariant: "muted" as const,
     valuation: 22,
     suffix: "B",
-    prefix: "$",
+    prefix: "£",
     source: "Mar 2026 Series C (CoinDesk/Bloomberg)",
     barColor: "bg-text-muted/30",
     status: "US Market Leader",
@@ -24,7 +24,7 @@ const comparables = [
     badgeVariant: "muted" as const,
     valuation: 12,
     suffix: "B",
-    prefix: "$",
+    prefix: "£",
     source: "Feb 2026 Secondary Market",
     barColor: "bg-text-muted/30",
     status: "Global Dominance",
@@ -34,9 +34,9 @@ const comparables = [
     name: "ShareMatch",
     badge: "Shariah-Compliant",
     badgeVariant: "amber" as const,
-    valuation: 83,
+    valuation: 64,
     suffix: "M",
-    prefix: "$",
+    prefix: "£",
     source: "Post-Money Seed Valuation",
     barColor: "bg-gradient-to-r from-amber-500 to-amber-400",
     status: "Uncapped Upside",
@@ -57,7 +57,7 @@ export default function OpportunitySection() {
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
           Prediction markets are the fastest-growing category in Fintech,
-          with Kalshi alone now valued at $22B. ShareMatch captures the only
+          with Kalshi alone now valued at £22B. ShareMatch captures the only
           segment incumbents cannot enter.
         </p>
       </div>
@@ -117,6 +117,20 @@ export default function OpportunitySection() {
         ))}
       </div>
 
+      {/* Pricing gap */}
+      <motion.p
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="text-center text-lg md:text-xl text-text-secondary max-w-3xl mx-auto mb-16"
+      >
+        At £64M post-money, ShareMatch is priced at just{" "}
+        <span className="text-gold-gradient font-bold">0.27% of Kalshi</span> and{" "}
+        <span className="text-gold-gradient font-bold">0.5% of Polymarket</span>, an entry
+        point into a category these incumbents are structurally barred from serving.
+      </motion.p>
+
       {/* TAM Callout */}
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
@@ -129,8 +143,8 @@ export default function OpportunitySection() {
           SHAREMATCH&rsquo;S TOTAL ADDRESSABLE MARKET
         </p>
         <AnimatedCounter
-          target={7.5}
-          prefix="$"
+          target={5.8}
+          prefix="£"
           suffix=" Trillion"
           decimals={1}
           className="text-5xl md:text-6xl font-bold text-emerald-400"

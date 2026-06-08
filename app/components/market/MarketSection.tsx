@@ -5,7 +5,7 @@ import SectionWrapper from "../common/SectionWrapper";
 import AnimatedCounter from "../common/AnimatedCounter";
 import GlowCard from "../common/GlowCard";
 import Badge from "../common/Badge";
-import { Globe, CreditCard } from "lucide-react";
+import { Globe } from "lucide-react";
 
 const phases = [
   {
@@ -122,7 +122,7 @@ export default function MarketSection() {
             <p className="text-text-muted text-sm">Addressable Users</p>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {phases[0].segments.map((s) => (
             <div
               key={s}
@@ -131,17 +131,6 @@ export default function MarketSection() {
               {s}
             </div>
           ))}
-          <div className="px-3 py-2 rounded-lg bg-white/5 text-sm text-text-secondary flex flex-wrap items-center gap-1.5">
-            {phases[0].rails.map((r) => (
-              <span
-                key={r}
-                className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] bg-white/5 text-text-muted"
-              >
-                <CreditCard className="w-2.5 h-2.5" />
-                {r}
-              </span>
-            ))}
-          </div>
         </div>
       </motion.div>
 
@@ -172,7 +161,7 @@ export default function MarketSection() {
               <p className="text-text-muted text-sm">Addressable Users</p>
             </div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             {p.segments.map((s) => (
               <div
                 key={s}
@@ -181,17 +170,6 @@ export default function MarketSection() {
                 {s}
               </div>
             ))}
-            <div className="px-3 py-2 rounded-lg bg-white/5 text-sm text-text-secondary flex flex-wrap items-center gap-1.5">
-              {p.rails.map((r) => (
-                <span
-                  key={r}
-                  className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] bg-white/5 text-text-muted"
-                >
-                  <CreditCard className="w-2.5 h-2.5" />
-                  {r}
-                </span>
-              ))}
-            </div>
           </div>
         </motion.div>
       ))}
@@ -211,22 +189,11 @@ export default function MarketSection() {
               className="text-2xl font-bold text-emerald-400"
             />
             <p className="text-xs text-text-muted mb-4">Addressable Users</p>
-            <div className="space-y-1.5 mb-4 flex-grow">
+            <div className="space-y-1.5 mb-2 flex-grow">
               {p.segments.map((s) => (
                 <p key={s} className="text-xs text-text-secondary">
                   {s}
                 </p>
-              ))}
-            </div>
-            <div className="flex flex-wrap gap-1.5 mt-auto">
-              {p.rails.map((r) => (
-                <span
-                  key={r}
-                  className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] bg-white/5 text-text-muted"
-                >
-                  <CreditCard className="w-2.5 h-2.5" />
-                  {r}
-                </span>
               ))}
             </div>
           </GlowCard>
