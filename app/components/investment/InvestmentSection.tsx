@@ -68,7 +68,7 @@ export default function InvestmentSection() {
               <p className="text-xs text-text-muted">Ordinary Shares</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-amber-400">£22B</p>
+              <p className="text-2xl font-bold text-amber-400">£16.5B</p>
               <p className="text-xs text-text-muted">Kalshi Comparable</p>
             </div>
             <div>
@@ -105,7 +105,7 @@ export default function InvestmentSection() {
         className="max-w-2xl mx-auto mb-6 text-center p-5 rounded-2xl bg-amber-500/5 border border-amber-500/20"
       >
         <p className="text-sm md:text-base text-text-primary">
-          We do not expect to raise again this year.{" "}
+          We do not expect to raise again.{" "}
           <span className="text-amber-400 font-semibold">This is the only chance to own ShareMatch at seed.</span>
         </p>
       </motion.div>

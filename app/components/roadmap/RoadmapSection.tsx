@@ -10,7 +10,7 @@ const milestones = [
     phase: "Live Now",
     title: "Platform Live & Trading",
     detail:
-      "Built on Solana. The exchange is live, with real users trading asset-backed performance tokens. Independent Shariah Fatwa secured and the seed round open.",
+      "Built on Solana, with real users trading asset-backed performance tokens. Fatwa secured, seed round open.",
     valuation: "£64M",
     completed: true,
     highlight: true,
@@ -19,28 +19,22 @@ const milestones = [
     phase: "Next",
     title: "KSA Launch & Mobile App",
     detail:
-      "Invitation-only rollout in Saudi Arabia via MeshPay, alongside the full mobile app release. First 1,000 VIP users.",
-    users: "1,000 VIP",
+      "Invitation-only Saudi Arabia rollout via MeshPay, with the full mobile app release.",
   },
   {
     phase: "Scaling",
     title: "GCC Expansion & Esports",
-    detail:
-      "Wider GCC rollout and Indonesia market entry. Esports markets go live, with the Series A to follow.",
-    users: "78,000",
+    detail: "Wider GCC rollout, Indonesia market entry, and esports markets live.",
   },
   {
     phase: "Global Moment",
     title: "FIFA World Cup Onboarding",
-    detail:
-      "Global onboarding funnel via the world's biggest sporting event, driving the next wave of active users.",
-    users: "245,000",
+    detail: "Global onboarding via the world's biggest sporting event.",
   },
   {
     phase: "Beyond",
     title: "Esports World Cup, Riyadh",
-    detail:
-      "Twitch, Discord, and creator collaborations at the world's largest esports event, with targeted expansion into esports demographics.",
+    detail: "Twitch, Discord and creator collaborations at the world's largest esports event.",
   },
 ];
 
@@ -106,14 +100,9 @@ export default function RoadmapSection() {
                     <p className={`text-[11px] font-semibold uppercase tracking-wider mb-1 ${m.completed ? "text-emerald-400" : "text-amber-400"}`}>{m.phase}</p>
                     <h3 className="text-lg font-semibold mb-1">{m.title}</h3>
                     <p className="text-sm text-text-secondary">{m.detail}</p>
-                    {(m.valuation || m.users) && (
+                    {m.valuation && (
                       <div className="mt-3 flex gap-2 flex-wrap justify-start md:justify-end">
-                        {m.valuation && (
-                          <Badge variant="amber">{m.valuation}</Badge>
-                        )}
-                        {m.users && (
-                          <Badge variant="emerald">{m.users} users</Badge>
-                        )}
+                        <Badge variant="amber">{m.valuation}</Badge>
                       </div>
                     )}
                   </div>

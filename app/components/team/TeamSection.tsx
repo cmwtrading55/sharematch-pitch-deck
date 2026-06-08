@@ -93,8 +93,8 @@ export default function TeamSection() {
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
           An operator-led team across the UK, Saudi Arabia and the UAE, pairing
-          capital-markets and Islamic-finance expertise with blockchain
-          engineering and sports-technology heritage.
+          capital-markets and Islamic-finance expertise with blockchain and
+          sports-tech heritage.
         </p>
       </div>
 

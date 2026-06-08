@@ -16,11 +16,11 @@ export default function CTASection() {
           transition={{ duration: 0.8 }}
         >
           <Image
-            src="/logos/sharematch-mark.svg"
+            src="/logos/sharematch-mark.png"
             alt=""
             width={48}
-            height={48}
-            className="mx-auto mb-8 opacity-60"
+            height={64}
+            className="mx-auto mb-8 opacity-70"
           />
 
           <Badge variant="amber" className="mb-6">
@@ -37,8 +37,7 @@ export default function CTASection() {
 
           <p className="text-lg text-text-secondary max-w-xl mx-auto mb-8">
             The platform is live and the round is open. We do not expect to raise
-            again this year, this is the only chance to own ShareMatch at seed
-            pricing.
+            again, this is the only chance to own ShareMatch at seed pricing.
           </p>
 
           {/* EIS callout */}

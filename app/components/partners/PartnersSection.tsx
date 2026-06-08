@@ -16,7 +16,7 @@ type Partner = {
 const partners: Partner[] = [
   { name: "MeshPay", category: "Payments", logo: "/logos/partners/meshpay.svg", logoHeight: 30 },
   { name: "Solana", category: "Blockchain", logo: "/logos/partners/solana.svg", logoHeight: 26 },
-  { name: "Sumsub", category: "KYC & AML", wordmark: "Sumsub" },
+  { name: "Sumsub", category: "KYC & AML", logo: "/logos/partners/sumsub.svg", logoHeight: 26 },
   { name: "My Inbox Media", category: "Communications", wordmark: "My Inbox Media" },
   { name: "Ear to the Ground", category: "Brand Strategy", wordmark: "Ear to the Ground" },
 ];
@@ -32,8 +32,8 @@ export default function PartnersSection() {
           Built with Best-in-Class Partners
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-          One unified stack, not a patchwork of local rails. Payments, blockchain,
-          identity, communications and brand, each handled by a category leader.
+          One unified stack. Payments, blockchain, identity, communications and
+          brand, each handled by a category leader.
         </p>
       </div>
 

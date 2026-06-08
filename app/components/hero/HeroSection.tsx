@@ -62,9 +62,9 @@ export default function HeroSection() {
           transition={{ delay: 0.6, duration: 0.6 }}
           className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Live and trading on Solana. An official Fatwa, AAOIFI-standard assets
-          and patent-pending settlement, the only Halal alternative to
-          Polymarket, Kalshi and DraftKings.
+          The new standard in ethical investing. Buy, sell and grow a portfolio
+          of asset-backed sports performance tokens, live on Solana and backed
+          by a formal Fatwa.
         </motion.p>
 
         {/* Key stats row */}
@@ -95,7 +95,7 @@ export default function HeroSection() {
           transition={{ delay: 0.85, duration: 0.6 }}
           className="text-sm text-text-secondary mb-10"
         >
-          We do not expect to raise again this year.{" "}
+          We do not expect to raise again.{" "}
           <span className="text-amber-400 font-medium">This is the only chance to own ShareMatch.</span>
         </motion.p>
 

@@ -63,10 +63,11 @@ export default function StickyNav() {
       >
         <div className="section-container flex items-center justify-between">
           <Image
-            src="/logos/sharematch-lockup.svg"
+            src="/logos/sharematch-lockup.png"
             alt="ShareMatch"
-            width={200}
-            height={48}
+            width={289}
+            height={80}
+            priority
             className={`transition-all duration-300 ${scrolled ? "h-8 md:h-12 w-auto" : "h-10 md:h-16 w-auto"
               }`}
           />

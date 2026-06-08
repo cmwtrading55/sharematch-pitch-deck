@@ -86,9 +86,9 @@ export default function UseOfProceeds() {
           Where the <span className="text-gold-gradient">£4M</span> Goes
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-          A fully costed twelve-month operating plan, May 2026 to April 2027.
+          A fully costed twelve-month plan.
           <span className="text-text-primary font-medium"> £2M takes ShareMatch to market</span>; the
-          full £4M funds the entire year. We do not expect to raise again in 2026.
+          full £4M funds the year. We do not expect to raise again.
         </p>
       </div>
 

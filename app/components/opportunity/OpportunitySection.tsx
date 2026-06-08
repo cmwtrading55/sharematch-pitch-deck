@@ -10,10 +10,11 @@ const comparables = [
     name: "Kalshi",
     badge: "Regulated",
     badgeVariant: "muted" as const,
-    valuation: 22,
+    valuation: 16.5,
+    decimals: 1,
     suffix: "B",
     prefix: "£",
-    source: "Mar 2026 Series C (CoinDesk/Bloomberg)",
+    source: "$22B, Mar 2026 Series F (Bloomberg)",
     barColor: "bg-text-muted/30",
     status: "US Market Leader",
     bg: "glass-card",
@@ -22,10 +23,11 @@ const comparables = [
     name: "Polymarket",
     badge: "Crypto",
     badgeVariant: "muted" as const,
-    valuation: 12,
+    valuation: 9,
+    decimals: 0,
     suffix: "B",
     prefix: "£",
-    source: "Feb 2026 Secondary Market",
+    source: "$12B, 2026 (ICE-backed)",
     barColor: "bg-text-muted/30",
     status: "Global Dominance",
     bg: "glass-card",
@@ -35,6 +37,7 @@ const comparables = [
     badge: "Shariah-Compliant",
     badgeVariant: "amber" as const,
     valuation: 64,
+    decimals: 0,
     suffix: "M",
     prefix: "£",
     source: "Post-Money Seed Valuation",
@@ -53,12 +56,12 @@ export default function OpportunitySection() {
           Market Context
         </Badge>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
-          Record Valuations. Haram Fintech Activities.
+          Record Valuations. A Market Incumbents Can&rsquo;t Serve.
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-          Prediction markets are the fastest-growing category in Fintech,
-          with Kalshi alone now valued at £22B. ShareMatch captures the only
-          segment incumbents cannot enter.
+          Prediction markets are Fintech&rsquo;s fastest-growing category, Kalshi
+          alone is now worth £16.5B. ShareMatch owns the one segment incumbents
+          cannot enter.
         </p>
       </div>
 
@@ -89,6 +92,7 @@ export default function OpportunitySection() {
                 target={comp.valuation}
                 prefix={comp.prefix}
                 suffix={comp.suffix}
+                decimals={comp.decimals}
                 className={`text-4xl font-bold ${
                   comp.featured ? "text-amber-400" : "text-text-primary"
                 }`}
@@ -125,10 +129,10 @@ export default function OpportunitySection() {
         transition={{ duration: 0.6 }}
         className="text-center text-lg md:text-xl text-text-secondary max-w-3xl mx-auto mb-16"
       >
-        At £64M post-money, ShareMatch is priced at just{" "}
-        <span className="text-gold-gradient font-bold">0.27% of Kalshi</span> and{" "}
-        <span className="text-gold-gradient font-bold">0.5% of Polymarket</span>, an entry
-        point into a category these incumbents are structurally barred from serving.
+        At £64M, ShareMatch is priced at just{" "}
+        <span className="text-gold-gradient font-bold">0.4% of Kalshi</span> and{" "}
+        <span className="text-gold-gradient font-bold">0.7% of Polymarket</span>, a foothold
+        in a category they are structurally barred from serving.
       </motion.p>
 
       {/* TAM Callout */}

@@ -26,10 +26,9 @@ export default function ProductSection() {
           Live and Trading on <span className="text-emerald-gradient">Solana</span>
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-          Not a betting site. Users buy and sell asset-backed performance tokens,
-          proportional ownership of real sports asset pools, across football,
-          cricket, motorsport, golf, basketball and global events. Every position
-          settles on-chain, with the HAL AI engine built in.
+          Buy and sell verifiable, asset-backed performance tokens tied to live
+          sports indices, across football, cricket, motorsport, golf, basketball
+          and global events. Settled on-chain, with HAL AI built in.
         </p>
       </div>
 
