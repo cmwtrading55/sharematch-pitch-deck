@@ -1,94 +1,75 @@
+// Generates ShareMatch-Pitch-Deck.pdf as a PAGINATED PDF (one section per page).
+// IMPORTANT: do NOT go back to a single full-height page.pdf() capture — that
+// produces ~139in-tall pages that Google Drive / most viewers cannot render.
+// Each <section> is captured and assembled into a normal-sized page via PyMuPDF.
 import puppeteer from "puppeteer";
-import path from "path";
+import { execFileSync } from "child_process";
 import fs from "fs";
+import path from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const URL = process.env.DECK_URL || "http://localhost:4321/";
-const VERIFY = process.argv.includes("--verify");
+const PAGES_DIR = "/tmp/deckpages";
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 (async () => {
-  const browser = await puppeteer.launch({
-    headless: true,
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
-  });
+  fs.rmSync(PAGES_DIR, { recursive: true, force: true });
+  fs.mkdirSync(PAGES_DIR, { recursive: true });
+
+  const browser = await puppeteer.launch({ headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox"] });
   const page = await browser.newPage();
   await page.setViewport({ width: 1440, height: 900, deviceScaleFactor: 2 });
-  await page.goto(URL, { waitUntil: "networkidle0" });
+  await page.goto(URL, { waitUntil: "networkidle0", timeout: 60000 });
 
-  // Trigger every framer-motion whileInView reveal (once:true) by scrolling through,
-  // dwell so width/stagger animations finish, then force any stragglers visible.
+  // Trigger framer-motion whileInView reveals, then pin any stragglers visible.
   await page.evaluate(async () => {
-    const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-    for (let y = 0; y < document.body.scrollHeight; y += 300) {
-      window.scrollTo(0, y);
-      await sleep(130);
-    }
-    window.scrollTo(0, document.body.scrollHeight);
-    await sleep(2200); // let width + staggered reveals complete
-    // Belt-and-braces: anything still left at opacity 0 / translated gets pinned to its final state.
+    const s = (ms) => new Promise((r) => setTimeout(r, ms));
+    for (let y = 0; y < document.body.scrollHeight; y += 300) { window.scrollTo(0, y); await s(120); }
+    window.scrollTo(0, document.body.scrollHeight); await s(2200);
     document.querySelectorAll("*").forEach((el) => {
-      const s = el.style;
-      if (!s) return;
-      if (s.opacity !== "" && parseFloat(s.opacity) < 1) s.opacity = "1";
-      if (s.transform && /translate|scale/.test(s.transform)) s.transform = "none";
+      const st = el.style; if (!st) return;
+      if (st.opacity !== "" && parseFloat(st.opacity) < 1) st.opacity = "1";
+      if (st.transform && /translate|scale/.test(st.transform)) st.transform = "none";
     });
-    window.scrollTo(0, 0);
-    await sleep(500);
+    window.scrollTo(0, 0); await s(400);
   });
-
-  // Hide fixed chrome (sticky nav + scroll-progress bar) so it doesn't overlay the export.
+  // Hide fixed nav + scroll-progress bar.
   await page.evaluate(() => {
-    const css = `nav{display:none!important;} body>div>div[style*="scaleX"], .fixed.top-0{display:none!important;}`;
     const s = document.createElement("style");
-    s.textContent = css;
+    s.textContent = "nav{display:none!important;} .fixed.top-0{display:none!important;}";
     document.head.appendChild(s);
-    // Also drop any element that is position:fixed at the very top (progress bar).
-    document.querySelectorAll("*").forEach((el) => {
-      const st = getComputedStyle(el);
-      if (st.position === "fixed" && parseInt(st.top || "999") <= 2 && el.offsetHeight < 8) {
-        el.style.display = "none";
-      }
-    });
   });
-  await new Promise((r) => setTimeout(r, 300));
+  await sleep(400);
 
-  if (VERIFY) {
-    const dir = "/tmp/verify";
-    fs.mkdirSync(dir, { recursive: true });
-    for (const id of ["hero", "opportunity", "product", "partners", "shariah", "markets", "roadmap", "team", "structure", "proceeds", "investment", "cta"]) {
-      const el = await page.$(`#${id}`);
-      let target = el;
-      if (!target && id === "cta") {
-        const meshes = await page.$$("section.gradient-mesh");
-        target = meshes[meshes.length - 1] || null;
-      }
-      if (!target && id === "hero") {
-        target = await page.$("section.gradient-mesh");
-      }
-      if (target) {
-        await target.scrollIntoView();
-        await new Promise((r) => setTimeout(r, 700));
-        await target.screenshot({ path: `${dir}/${id}.png` });
-        console.log(`shot ${id}`);
-      } else {
-        console.log(`MISSING #${id}`);
-      }
-    }
-    await page.evaluate(() => window.scrollTo(0, 0));
+  const sections = await page.$$("main section");
+  const manifest = [];
+  let n = 0;
+  for (const sec of sections) {
+    await sec.scrollIntoView();
+    await sleep(250);
+    const box = await sec.boundingBox();
+    if (!box || box.height < 40) continue;
+    n++;
+    const file = path.join(PAGES_DIR, `${String(n).padStart(2, "0")}.png`);
+    await sec.screenshot({ path: file });
+    manifest.push({ file, w: Math.round(box.width), h: Math.round(box.height) });
   }
-
-  const bodyHeight = await page.evaluate(() => document.body.scrollHeight);
-  const outputPath = path.join(__dirname, "ShareMatch-Pitch-Deck.pdf");
-  await page.pdf({
-    path: outputPath,
-    width: "1440px",
-    height: `${bodyHeight}px`,
-    printBackground: true,
-    margin: { top: "0", right: "0", bottom: "0", left: "0" },
-    preferCSSPageSize: false,
-  });
-  console.log(`PDF: ${outputPath} (${(fs.statSync(outputPath).size / 1024 / 1024).toFixed(2)} MB, height ${bodyHeight}px)`);
-
+  fs.writeFileSync(path.join(PAGES_DIR, "manifest.json"), JSON.stringify(manifest));
   await browser.close();
+
+  // Assemble into a paginated PDF (one section per page) with PyMuPDF.
+  const out = path.join(__dirname, "ShareMatch-Pitch-Deck.pdf");
+  const py = `
+import fitz, json, os
+m = json.load(open(${JSON.stringify(path.join(PAGES_DIR, "manifest.json"))}))
+doc = fitz.open()
+for it in m:
+    page = doc.new_page(width=it["w"]*0.75, height=it["h"]*0.75)
+    page.insert_image(page.rect, filename=it["file"])
+doc.save(${JSON.stringify(out)}, deflate=True, garbage=4)
+print("PDF:", ${JSON.stringify(out)}, doc.page_count, "pages,", round(os.path.getsize(${JSON.stringify(out)})/1024/1024,2), "MB")
+`;
+  const res = execFileSync("python3", ["-c", py], { encoding: "utf8" });
+  console.log(`captured ${n} sections; ${res.trim()}`);
 })();
