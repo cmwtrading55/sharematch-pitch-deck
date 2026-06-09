@@ -9,7 +9,6 @@ import PartnersSection from "./components/partners/PartnersSection";
 import MarketSection from "./components/market/MarketSection";
 import RoadmapSection from "./components/roadmap/RoadmapSection";
 import TeamSection from "./components/team/TeamSection";
-import CorporateStructure from "./components/structure/CorporateStructure";
 import UseOfProceeds from "./components/proceeds/UseOfProceeds";
 
 import CTASection from "./components/cta/CTASection";
@@ -34,7 +33,6 @@ export default function Home() {
       <Divider />
       <TeamSection />
       <Divider />
-      <CorporateStructure />
       <UseOfProceeds />
       <InvestmentSection />
       <Divider />

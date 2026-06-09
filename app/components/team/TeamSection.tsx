@@ -115,22 +115,22 @@ const shariahBoard = [
     role: "Chairman",
     initials: "MZ",
     gradient: "from-emerald-500 to-emerald-800",
-    bio: "MBA in Islamic Finance; Certified Shari'a Advisor and Auditor (CSAA) and Certified Islamic Professional Accountant (CIPA), both from AAOIFI in Bahrain.",
+    bio: "Islamic Banking & Finance expert. CSAA and CIPA (AAOIFI), DBA (Harvard executive leadership) and MBA in Islamic Finance. Shariah Board Secretary at Jadwa Investment; sits on the Shariah boards of Islamic Coin, the Haqq Network and 21Shares Funds.",
     linkedin: "https://www.linkedin.com/in/mahmoud-zoair/",
+  },
+  {
+    name: "Aya Hisham Eissa",
+    role: "Member",
+    initials: "AE",
+    gradient: "from-emerald-400 to-teal-600",
+    bio: "Comparative-jurisprudence scholar (Al-Azhar) and CSAA Fellow (AAOIFI). Member of the Royal Chartered Institute of Arbitrators and Islamic Arbitrator at IICRA, Dubai. Certified Sukuk Specialist.",
   },
   {
     name: "Mohamed Tayel",
     role: "Member",
     initials: "MT",
     gradient: "from-emerald-500 to-emerald-700",
-    bio: "Independent Shariah scholar on the Advisory Board, reviewing and certifying the platform's products and token frameworks.",
-  },
-  {
-    name: "Dr Aya Hisham",
-    role: "Member",
-    initials: "AH",
-    gradient: "from-emerald-400 to-teal-600",
-    bio: "Independent Shariah scholar on the Advisory Board, reviewing and certifying the platform's products and token frameworks.",
+    bio: "Islamic law (Al-Azhar) and international business law (CEU). AML and compliance specialist, currently MLRO at Western Union Hungary; previously Binance MENA, Wise, KPMG and Morgan Stanley.",
   },
 ];
 
@@ -262,9 +262,10 @@ export default function TeamSection() {
       </div>
 
       <p className="text-[11px] text-text-muted leading-relaxed mt-6 pt-6 border-t border-white/5 max-w-5xl mx-auto text-center">
-        In line with AAOIFI governance standards, the Shariah Board operates
-        independently of the executive team, providing religious oversight and
-        certification rather than executive management.
+        ShareMatch is independently supervised by a Shariah Advisory Board
+        comprising highly qualified scholars. Our board conducts ongoing periodic
+        audits of the platform and reviews any new market features prior to launch
+        to ensure continuous compliance.
       </p>
     </SectionWrapper>
   );

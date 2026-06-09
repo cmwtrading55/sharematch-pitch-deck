@@ -87,12 +87,6 @@ export default function StickyNav() {
             ))}
           </div>
 
-          <a
-            href="#investment"
-            className="hidden lg:inline-flex items-center px-5 py-2 text-sm font-semibold rounded-full bg-emerald-500 text-bg-primary hover:bg-emerald-400 transition-colors"
-          >
-            Invest Now
-          </a>
         </div>
       </nav>
     </>
