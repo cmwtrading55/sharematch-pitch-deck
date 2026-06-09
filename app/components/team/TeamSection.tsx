@@ -124,6 +124,7 @@ const shariahBoard = [
     initials: "AE",
     gradient: "from-emerald-400 to-teal-600",
     bio: "Comparative-jurisprudence scholar (Al-Azhar) and CSAA Fellow (AAOIFI). Member of the Royal Chartered Institute of Arbitrators and Islamic Arbitrator at IICRA, Dubai. Certified Sukuk Specialist.",
+    linkedin: "https://www.linkedin.com/in/aya-eissa-mciarb-0a1328223/",
   },
   {
     name: "Mohamed Tayel",
@@ -131,6 +132,7 @@ const shariahBoard = [
     initials: "MT",
     gradient: "from-emerald-500 to-emerald-700",
     bio: "Islamic law (Al-Azhar) and international business law (CEU). AML and compliance specialist, currently MLRO at Western Union Hungary; previously Binance MENA, Wise, KPMG and Morgan Stanley.",
+    linkedin: "https://www.linkedin.com/in/mtayel/",
   },
 ];
 
