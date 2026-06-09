@@ -264,7 +264,7 @@ export default function TeamSection() {
       </div>
 
       <p className="text-[11px] text-text-muted leading-relaxed mt-6 pt-6 border-t border-white/5 max-w-5xl mx-auto text-center">
-        ShareMatch is independently supervised by a Shariah Advisory Board
+        ShareMatch is independently supervised by a Shariah Board
         comprising highly qualified scholars. Our board conducts ongoing periodic
         audits of the platform and reviews any new market features prior to launch
         to ensure continuous compliance.
