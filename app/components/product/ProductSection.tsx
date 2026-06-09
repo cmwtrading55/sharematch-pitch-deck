@@ -10,7 +10,7 @@ const stats = [
   "Built on Solana",
   "Live & Trading",
   "Dual-Token (SMUS + IAT)",
-  "HAL AI · Google Gemini",
+  "HAL AI Engine",
   "KYC by Sumsub",
   "On-Chain Settlement",
 ];
@@ -117,7 +117,7 @@ export default function ProductSection() {
             An investment platform first! Ask HAL to &ldquo;analyse my current
             holdings&rdquo; and it reads your live positions and explains every
             one of them, grounded in real fixtures and results, Shariah-screened,
-            and powered by Google Gemini.
+            and powered by a proprietary AI Agent.
           </p>
           <div className="flex flex-wrap gap-2.5">
             {[

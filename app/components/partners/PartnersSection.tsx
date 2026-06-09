@@ -11,13 +11,14 @@ type Partner = {
   logo?: string;
   logoHeight?: number;
   wordmark?: string;
+  lightBg?: boolean;
 };
 
 const partners: Partner[] = [
   { name: "MeshPay", category: "Payments", logo: "/logos/partners/meshpay.svg", logoHeight: 30 },
   { name: "Solana", category: "Blockchain", logo: "/logos/partners/solana.svg", logoHeight: 26 },
   { name: "Sumsub", category: "KYC & AML", logo: "/logos/partners/sumsub.svg", logoHeight: 26 },
-  { name: "My Inbox Media", category: "Communications", wordmark: "My Inbox Media" },
+  { name: "My Inbox Media", category: "Communications", logo: "/logos/partners/myinboxmedia.png", logoHeight: 34, lightBg: true },
   { name: "Ear to the Ground", category: "Brand Strategy", wordmark: "Ear to the Ground" },
 ];
 
@@ -50,14 +51,26 @@ export default function PartnersSection() {
             <div className="hairline-gold" />
             <div className="flex-1 flex items-center justify-center px-5 py-9 min-h-[96px]">
               {p.logo ? (
-                <Image
-                  src={p.logo}
-                  alt={p.name}
-                  width={140}
-                  height={p.logoHeight ?? 28}
-                  style={{ height: p.logoHeight ?? 28, width: "auto" }}
-                  className="opacity-90 group-hover:opacity-100 transition-opacity"
-                />
+                p.lightBg ? (
+                  <div className="bg-white rounded-lg px-3.5 py-2.5 flex items-center justify-center">
+                    <Image
+                      src={p.logo}
+                      alt={p.name}
+                      width={160}
+                      height={p.logoHeight ?? 28}
+                      style={{ height: p.logoHeight ?? 28, width: "auto" }}
+                    />
+                  </div>
+                ) : (
+                  <Image
+                    src={p.logo}
+                    alt={p.name}
+                    width={140}
+                    height={p.logoHeight ?? 28}
+                    style={{ height: p.logoHeight ?? 28, width: "auto" }}
+                    className="opacity-90 group-hover:opacity-100 transition-opacity"
+                  />
+                )
               ) : (
                 <span className="font-display text-lg md:text-xl font-bold text-white/90 group-hover:text-white text-center leading-tight tracking-tight transition-colors">
                   {p.wordmark}
