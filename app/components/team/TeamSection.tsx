@@ -29,7 +29,7 @@ const executives = [
     location: "United Arab Emirates",
     initials: "RA",
     gradient: "from-emerald-400 to-teal-600",
-    bio: "Leads technology and AI. Architects the Shariah-compliant trading platform, real-world-asset tokenisation, the IAT and SMT token frameworks, and the KYC/KYB and on/off-ramp infrastructure behind the exchange.",
+    bio: "Leads technology and AI. Architects the Shariah-compliant trading platform, real-world-asset tokenisation, the IAT and SMUS token frameworks, and the KYC/KYB and on/off-ramp infrastructure behind the exchange.",
     linkedin: "https://www.linkedin.com/in/resmikrishna/",
   },
   {
@@ -47,7 +47,7 @@ const executives = [
     location: "United Kingdom",
     initials: "WB",
     gradient: "from-emerald-500 to-emerald-800",
-    bio: "Leads blockchain engineering from The Den, ShareMatch's London lab. Owns the smart-contract layer behind the IAT and SMT frameworks and the on-chain tokenisation and settlement pipeline on Solana.",
+    bio: "Leads blockchain engineering from The Den, ShareMatch's London lab. Owns the smart-contract layer behind the IAT and SMUS frameworks and the on-chain tokenisation and settlement pipeline on Solana.",
   },
   {
     name: "Nigel Rodrigo",

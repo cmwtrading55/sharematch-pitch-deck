@@ -9,7 +9,7 @@ import { Sparkles } from "lucide-react";
 const stats = [
   "Built on Solana",
   "Live & Trading",
-  "Dual-Token (SMT + IAT)",
+  "Dual-Token (SMUS + IAT)",
   "HAL AI · Google Gemini",
   "KYC by Sumsub",
   "On-Chain Settlement",
