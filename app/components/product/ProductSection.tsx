@@ -114,7 +114,7 @@ export default function ProductSection() {
             <span className="text-gold-gradient">your portfolio</span>
           </h3>
           <p className="text-text-secondary leading-relaxed mb-6">
-            No competitor has this. Ask HAL to &ldquo;analyse my current
+            An investment platform first! Ask HAL to &ldquo;analyse my current
             holdings&rdquo; and it reads your live positions and explains every
             one of them, grounded in real fixtures and results, Shariah-screened,
             and powered by Google Gemini.
