@@ -17,7 +17,7 @@ const features = [
     icon: ArrowLeftRight,
     title: "Secondary Trading Approved",
     description:
-      "Full secondary market explicitly approved by scholars. All tokens on the platform are structured in accordance with standards published by the AAOIFI (Accounting and Auditing Organisation for Islamic Financial Institutions). This endorsement is globally unique and structurally impossible for incumbents to replicate.",
+      "Full secondary market explicitly approved by scholars. All tokens on the platform are structured in accordance with ShareMatch's own Shariah standards, ratified by its independent Shariah Advisory Board. This endorsement is globally unique and structurally impossible for incumbents to replicate.",
   },
   {
     icon: Lock,
