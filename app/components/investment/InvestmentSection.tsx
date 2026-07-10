@@ -68,7 +68,7 @@ export default function InvestmentSection() {
               <p className="text-xs text-text-muted">Ordinary Shares</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-amber-400">£16.5B</p>
+              <p className="text-2xl font-bold text-amber-400">£30B</p>
               <p className="text-xs text-text-muted">Kalshi Comparable</p>
             </div>
             <div>

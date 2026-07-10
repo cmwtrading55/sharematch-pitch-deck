@@ -10,11 +10,11 @@ const comparables = [
     name: "Kalshi",
     badge: "Regulated",
     badgeVariant: "muted" as const,
-    valuation: 16.5,
-    decimals: 1,
+    valuation: 30,
+    decimals: 0,
     suffix: "B",
     prefix: "£",
-    source: "$22B, Mar 2026 Series F (Bloomberg)",
+    source: "Raising at $40B, Jun 2026 (FT)",
     barColor: "bg-text-muted/30",
     status: "US Market Leader",
     bg: "glass-card",
@@ -23,11 +23,11 @@ const comparables = [
     name: "Polymarket",
     badge: "Crypto",
     badgeVariant: "muted" as const,
-    valuation: 9,
-    decimals: 0,
+    valuation: 11.3,
+    decimals: 1,
     suffix: "B",
     prefix: "£",
-    source: "$12B, 2026 (ICE-backed)",
+    source: "$15B, 2026 (ICE-backed, Bloomberg)",
     barColor: "bg-text-muted/30",
     status: "Global Dominance",
     bg: "glass-card",
@@ -60,7 +60,7 @@ export default function OpportunitySection() {
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
           Prediction markets are Fintech&rsquo;s fastest-growing category, Kalshi
-          alone is now worth £16.5B. ShareMatch owns the one segment incumbents
+          alone is now valued at £30B. ShareMatch owns the one segment incumbents
           cannot enter.
         </p>
       </div>
@@ -130,8 +130,8 @@ export default function OpportunitySection() {
         className="text-center text-lg md:text-xl text-text-secondary max-w-3xl mx-auto mb-16"
       >
         At £64M, ShareMatch is priced at just{" "}
-        <span className="text-gold-gradient font-bold">0.4% of Kalshi</span> and{" "}
-        <span className="text-gold-gradient font-bold">0.7% of Polymarket</span>, a foothold
+        <span className="text-gold-gradient font-bold">0.2% of Kalshi</span> and{" "}
+        <span className="text-gold-gradient font-bold">0.6% of Polymarket</span>, a foothold
         in a category they are structurally barred from serving.
       </motion.p>
 
