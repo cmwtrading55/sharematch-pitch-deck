@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import Deck from "./components/Deck";
 
-// DECK_VARIANT=named builds the private investor edition (names FootballCo) at
-// the root. The public build leaves the env var unset.
-const named = process.env.DECK_VARIANT === "named";
+// FootballCo naming approved for fundraising surfaces (Andy Jackson's consent,
+// relayed by Paul in #gtm-footballco, 15 Jul 2026). Flip to false to revert the
+// public deck to the unnamed copy if that consent changes pre-press-release.
+const named = true;
+
+// deck.sharematch.me (the DECK_VARIANT=named direct-upload build) stays
+// noindexed so the two hosts never compete in search.
+const privateAlias = process.env.DECK_VARIANT === "named";
 
 export function generateMetadata(): Metadata {
-  if (!named) return {};
+  if (!privateAlias) return {};
   return {
     title: "ShareMatch · Investor Deck",
     robots: { index: false, follow: false },
