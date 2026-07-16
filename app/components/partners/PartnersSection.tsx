@@ -16,8 +16,11 @@ type Partner = {
 
 const partners: Partner[] = [
   { name: "MeshPay", category: "Payments", logo: "/logos/partners/meshpay.svg", logoHeight: 30 },
+  { name: "Halliday", category: "Card On-Ramp", logo: "/logos/partners/halliday.svg", logoHeight: 24 },
   { name: "Solana", category: "Blockchain", logo: "/logos/partners/solana.svg", logoHeight: 26 },
   { name: "Sumsub", category: "KYC & AML", logo: "/logos/partners/sumsub.svg", logoHeight: 26 },
+  { name: "FootballCo", category: "B2C Distribution", logo: "/logos/partners/footballco.png", logoHeight: 22 },
+  { name: "Kooora", category: "Football Media Network", logo: "/logos/partners/kooora.png", logoHeight: 26 },
   { name: "My Inbox Media", category: "Communications", logo: "/logos/partners/myinboxmedia.png", logoHeight: 34, lightBg: true },
   { name: "Ear to the Ground", category: "Brand Strategy", wordmark: "Ear to the Ground" },
 ];
@@ -46,7 +49,7 @@ export default function PartnersSection({
         </p>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
         {partners.map((p, i) => (
           <motion.div
             key={p.name}
@@ -124,9 +127,11 @@ export default function PartnersSection({
       </motion.div>
 
       <p className="text-center text-xs text-text-muted max-w-2xl mx-auto mt-8">
-        Global fiat and crypto on-ramps via MeshPay. On-chain settlement on Solana.
-        Identity and AML verification by Sumsub. Member communications by My Inbox
-        Media. Brand and fan strategy by Ear to the Ground.
+        Global fiat and crypto on-ramps via MeshPay. Card, Apple Pay and Google Pay
+        deposits via Halliday. On-chain settlement on Solana. Identity and AML
+        verification by Sumsub. B2C distribution across MENA by FootballCo through
+        the Kooora network. Member communications by My Inbox Media. Brand and fan
+        strategy by Ear to the Ground.
       </p>
     </SectionWrapper>
   );

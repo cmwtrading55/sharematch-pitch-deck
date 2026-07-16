@@ -24,7 +24,7 @@ export default function HeroSection() {
           transition={{ delay: 0.1, duration: 0.6 }}
           className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.35em] text-amber-400/90 mb-5"
         >
-          The Future of Halal SportFi
+          The Future of SportsFi
         </motion.p>
 
         {/* Status badge */}

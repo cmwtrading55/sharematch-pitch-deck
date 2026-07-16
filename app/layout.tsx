@@ -20,11 +20,11 @@ const bricolage = Bricolage_Grotesque({
 export const metadata: Metadata = {
   title: "ShareMatch · The World's First Shariah-Compliant Sports Investment Market",
   description:
-    "The Future of Halal SportFi. Live and trading on Solana. Seed round open now: £4M at £60M pre-money. The only chance to own ShareMatch. EIS eligible.",
+    "The Future of SportsFi. Live and trading on Solana. Seed round open now: £4M at £60M pre-money. The only chance to own ShareMatch. EIS eligible.",
   openGraph: {
     title: "ShareMatch · The World's First Shariah-Compliant Sports Investment Market",
     description:
-      "The Future of Halal SportFi. Live and trading on Solana. Seed round open now: £4M at £60M pre-money. The only chance to own ShareMatch. EIS eligible.",
+      "The Future of SportsFi. Live and trading on Solana. Seed round open now: £4M at £60M pre-money. The only chance to own ShareMatch. EIS eligible.",
     type: "website",
   },
 };
