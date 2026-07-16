@@ -22,7 +22,13 @@ const partners: Partner[] = [
   { name: "Ear to the Ground", category: "Brand Strategy", wordmark: "Ear to the Ground" },
 ];
 
-export default function PartnersSection() {
+export default function PartnersSection({
+  distributionPartner,
+  distributionBlurb,
+}: {
+  distributionPartner: string;
+  distributionBlurb: string;
+}) {
   return (
     <SectionWrapper id="partners" className="py-5 md:py-10 xl:pt-4">
       <div className="text-center mb-12">
@@ -33,8 +39,8 @@ export default function PartnersSection() {
           Built with Best-in-Class Partners
         </h2>
         <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-          One unified stack. Payments, blockchain, identity, communications and
-          brand, each handled by a category leader.
+          One unified stack. Payments, blockchain, identity, communications,
+          brand and distribution, each handled by a category leader.
         </p>
       </div>
 
@@ -85,6 +91,23 @@ export default function PartnersSection() {
           </motion.div>
         ))}
       </div>
+
+      {/* B2C distribution partnership */}
+      <motion.div
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: [0.22, 0.61, 0.36, 1] }}
+        className="max-w-4xl mx-auto mt-10 p-6 md:p-8 rounded-2xl bg-emerald-900/30 border border-amber-500/20 text-center"
+      >
+        <Badge variant="amber" className="mb-3">
+          B2C Distribution &middot; MOU Signed July 2026
+        </Badge>
+        <h3 className="text-xl md:text-2xl font-bold mb-2">{distributionPartner}</h3>
+        <p className="text-sm md:text-base text-text-secondary max-w-2xl mx-auto">
+          {distributionBlurb}
+        </p>
+      </motion.div>
 
       <p className="text-center text-xs text-text-muted max-w-2xl mx-auto mt-8">
         Global fiat and crypto on-ramps via MeshPay. On-chain settlement on Solana.

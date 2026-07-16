@@ -5,7 +5,7 @@ import { useRef } from "react";
 import SectionWrapper from "../common/SectionWrapper";
 import Badge from "../common/Badge";
 
-const milestones = [
+const getMilestones = (seasonDetail: string) => [
   {
     phase: "Live Now",
     title: "Platform Live & Trading",
@@ -22,14 +22,14 @@ const milestones = [
       "Invitation-only Saudi Arabia rollout via MeshPay, with the full mobile app release.",
   },
   {
+    phase: "Season Kickoff",
+    title: "2026/27 Football Season Onboarding",
+    detail: seasonDetail,
+  },
+  {
     phase: "Scaling",
     title: "GCC Expansion & Esports",
     detail: "Wider GCC rollout, Indonesia market entry, and esports markets live.",
-  },
-  {
-    phase: "Global Moment",
-    title: "FIFA World Cup Onboarding",
-    detail: "Global onboarding via the world's biggest sporting event.",
   },
   {
     phase: "Beyond",
@@ -38,7 +38,8 @@ const milestones = [
   },
 ];
 
-export default function RoadmapSection() {
+export default function RoadmapSection({ seasonDetail }: { seasonDetail: string }) {
+  const milestones = getMilestones(seasonDetail);
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,

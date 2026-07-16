@@ -13,7 +13,7 @@ const oneOff = {
   subtotal: 1_481_000,
   accent: "from-amber-500 to-amber-400",
   items: [
-    { label: "Launch marketing & FIFA World Cup", value: 510_000 },
+    { label: "Launch marketing & season-start campaigns", value: 510_000 },
     { label: "IP, patents & trademarks (12+ jurisdictions)", value: 500_000 },
     { label: "Corporate & regulatory (BVI, Poland MiCA, KSA)", value: 236_000 },
     { label: "Recruitment & first-year audit", value: 127_000 },
