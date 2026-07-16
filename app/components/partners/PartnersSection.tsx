@@ -25,9 +25,11 @@ const partners: Partner[] = [
 export default function PartnersSection({
   distributionPartner,
   distributionBlurb,
+  distributionStats,
 }: {
   distributionPartner: string;
   distributionBlurb: string;
+  distributionStats: { value: string; label: string }[];
 }) {
   return (
     <SectionWrapper id="partners" className="py-5 md:py-10 xl:pt-4">
@@ -107,6 +109,18 @@ export default function PartnersSection({
         <p className="text-sm md:text-base text-text-secondary max-w-2xl mx-auto">
           {distributionBlurb}
         </p>
+        <div className="grid grid-cols-3 gap-4 max-w-xl mx-auto mt-6 pt-5 border-t border-white/10">
+          {distributionStats.map((s) => (
+            <div key={s.label}>
+              <p className="font-display text-2xl md:text-3xl font-bold text-gold-gradient">
+                {s.value}
+              </p>
+              <p className="text-[11px] text-text-muted uppercase tracking-wider mt-1">
+                {s.label}
+              </p>
+            </div>
+          ))}
+        </div>
       </motion.div>
 
       <p className="text-center text-xs text-text-muted max-w-2xl mx-auto mt-8">

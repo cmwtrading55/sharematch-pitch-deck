@@ -22,15 +22,25 @@ const copy = {
     distributionPartner: "A Leading MENA Football Media Group",
     distributionBlurb:
       "Our signed MOU with one of MENA's largest football media groups opens access to a 145M+ monthly football audience across 12 MENA markets. Activation is timed to the 2026/27 season kickoff, with the full commercial agreement in negotiation.",
+    distributionStats: [
+      { value: "145M+", label: "Monthly football audience" },
+      { value: "12", label: "MENA markets" },
+      { value: "2026/27", label: "Season activation" },
+    ],
     seasonDetail:
       "Onboarding at scale as the EPL, La Liga, Champions League and Saudi Pro League seasons kick off, driven by our B2C partnership with one of MENA's largest football media groups.",
   },
   named: {
     distributionPartner: "FootballCo (Kooora)",
     distributionBlurb:
-      "Our signed MOU with FootballCo, owner of Kooora, MENA's biggest football media network, opens access to a 145M+ monthly football audience across 12 MENA markets. Activation is timed to the 2026/27 season kickoff, with the full commercial agreement in negotiation.",
+      "FootballCo has committed to bringing ShareMatch its first 10 million customers. Our signed MOU with FootballCo, owner of Kooora, MENA's biggest football media network, opens access to a 145M+ monthly football audience across 12 MENA markets. Activation is timed to the 2026/27 season kickoff, with the full commercial agreement in negotiation.",
+    distributionStats: [
+      { value: "10M", label: "Customer commitment" },
+      { value: "145M+", label: "Monthly football audience" },
+      { value: "12", label: "MENA markets" },
+    ],
     seasonDetail:
-      "Onboarding at scale as the EPL, La Liga, Champions League and Saudi Pro League seasons kick off, driven by our B2C partnership with FootballCo, whose Kooora network reaches a 145M+ monthly football audience across MENA.",
+      "Onboarding at scale as the EPL, La Liga, Champions League and Saudi Pro League seasons kick off, driven by our B2C partnership with FootballCo, who have committed to bringing ShareMatch its first 10 million customers from Kooora's 145M+ monthly football audience.",
   },
 };
 
@@ -40,7 +50,7 @@ export default function Deck({ named = false }: { named?: boolean }) {
     <main>
       {named && (
         <div className="bg-amber-500/10 border-b border-amber-500/20 px-4 py-2 text-center text-xs text-amber-400 tracking-wide">
-          Prepared for Alpha Square Group &middot; Contains partner details not yet publicly announced &middot; Please do not redistribute
+          Private investor edition &middot; Partnership details not yet publicly announced &middot; Please do not redistribute
         </div>
       )}
       <StickyNav />
@@ -53,6 +63,7 @@ export default function Deck({ named = false }: { named?: boolean }) {
       <PartnersSection
         distributionPartner={c.distributionPartner}
         distributionBlurb={c.distributionBlurb}
+        distributionStats={c.distributionStats}
       />
       <ShariahEdge />
       <Divider />
