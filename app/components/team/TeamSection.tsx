@@ -123,7 +123,7 @@ const shariahBoard = [
     role: "Member",
     initials: "AE",
     gradient: "from-emerald-400 to-teal-600",
-    bio: "Comparative-jurisprudence scholar (Al-Azhar) and CSAA Fellow (AAOIFI). Member of the Royal Chartered Institute of Arbitrators and Islamic Arbitrator at IICRA, Dubai. Certified Sukuk Specialist.",
+    bio: "Comparative-jurisprudence scholar (Al-Azhar) and CSAA Fellow (AAOIFI). Member of the Chartered Institute of Arbitrators and Islamic Arbitrator at IICRA, Dubai. Certified Sukuk Specialist.",
     linkedin: "https://www.linkedin.com/in/aya-eissa-mciarb-0a1328223/",
   },
   {
